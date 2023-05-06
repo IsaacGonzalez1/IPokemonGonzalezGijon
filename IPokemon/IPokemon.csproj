@@ -119,6 +119,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CapturaPokemon.xaml.cs">
+      <DependentUpon>CapturaPokemon.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CombatePage.xaml.cs">
       <DependentUpon>CombatePage.xaml</DependentUpon>
     </Compile>
@@ -144,10 +147,13 @@
     <Content Include="Assets\corazonVida.png" />
     <Content Include="Assets\EscenarioFuecoco.jpg" />
     <Content Include="Assets\escudoAnimacion.png" />
+    <Content Include="Assets\fondoPokemon.jpg" />
     <Content Include="Assets\gotamuerto.png" />
+    <Content Include="Assets\imagenIpokemon.png" />
     <Content Include="Assets\maraca.jpg" />
     <Content Include="Assets\pocionStamina.jpg" />
     <Content Include="Assets\PocionVida.png" />
+    <Content Include="Assets\pokemon.png" />
     <Content Include="Assets\pum.png" />
     <Content Include="Assets\sombrero fuecoco.jpg" />
     <Content Include="Assets\sprit 3 mordisco.png" />
@@ -172,6 +178,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="CapturaPokemon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CombatePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Page.Background>
-        <ImageBrush ImageSource="/Assets/EscenarioFuecoco.jpg"/>
+        <ImageBrush ImageSource="/Assets/fondoPokemon.jpg" Opacity="0.6"/>
     </Page.Background>
 
     <Grid>
@@ -19,15 +19,51 @@
             <ColumnDefinition Width="300"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <StackPanel Grid.Row="1">
-            <Button x:Name="BtnInicio" Content="Inicio" Width="300" Height="104" Click="BtnInicio_Click"/>
-            <Button x:Name="BtnPokedex" Content="Pokedex" Width="300" Height="104" Click="BtnPokedex_Click"/>
-            <Button x:Name="BtnCombate" Content="Combate" Width="300" Height="104" Click="BtnCombate_Click"/>
-            <Button x:Name="BtnMiniJuegos" Content="Minijuegos" Width="300" Height="104"/>
-            <Image x:Name="ImgAyuda" Height="100" Width="100"/>
-            <Image x:Name="ImgManualdelJuego" Height="100" Width="100" RenderTransformOrigin="0.42,0.46"/>
-        </StackPanel>
-        <Frame x:Name="fmMain" Grid.Column="1" Grid.Row="1"/>
+        <SplitView x:Name="sView" IsPaneOpen="True" DisplayMode="CompactInline" CompactPaneLength="30" Grid.Row="1" Opacity="0.87">
+            <SplitView.Pane>
+                <Grid>
+                    <SymbolIcon x:Name="SymInicio" Grid.Row="0" Margin="4" Symbol="Home"></SymbolIcon>
+                    <SymbolIcon x:Name="SymPokedex" Grid.Row="1" Margin="4" Symbol="Pictures"></SymbolIcon>
+                    <SymbolIcon x:Name="SymCombate" Grid.Row="2" Margin="4" Symbol="People"></SymbolIcon>
+                    <SymbolIcon x:Name="SymCaptura" Grid.Row="3" Margin="4" Symbol="Camera"></SymbolIcon>
 
+
+                    <Button x:Name="BtnInicio" Grid.Column="1"  Content="Inicio" Height="50"
+                        Background="{x:Null}" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left"
+                        BorderBrush="{x:Null}"  Margin="0,0,25,0" Click="BtnInicio_Click_1" FontFamily="Unispace"/>
+
+                    <Button x:Name="BtnPokedex" Grid.Row="1" Grid.Column="1" Content="PokeDex" Height="50" Background="{x:Null}"
+FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" BorderBrush="{x:Null}" 
+Margin="0,0,25,0" Click="BtnPokedex_Click_1" FontFamily="Unispace"/>
+                    <Button x:Name="BtnCombate" Grid.Row="2" Grid.Column="1" Content="Combate" Height="50" Background="{x:Null}"
+FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" BorderBrush="{x:Null}" 
+Margin="0,0,25,0" Click="BtnCombate_Click_1" FontFamily="Unispace"/>
+                    <Button x:Name="BtnCaptura" Grid.Row="3" Grid.Column="1" Content="Captura" Height="50" Background="{x:Null}"
+FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" BorderBrush="{x:Null}" Margin="0,0,25,0" Click="BtnCaptura_Click" FontFamily="Unispace"/>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+            </SplitView.Pane>
+        </SplitView>
+        <Grid x:Name="BtnMenu">
+            <Border>
+
+                <Button x:Name="BtnMenuPrincipal" Margin="4" Click="BtnMenuPrincipal_Click">
+                    <FontIcon Foreground="White" Glyph="&#xE700;"
+ FontFamily="Segoe MDL2 Assets" />
+                </Button>
+            </Border>
+        </Grid>
+        <Frame x:Name="fmMain" Margin="0,0,0,50" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <Image x:Name="ImgTitulo" HorizontalAlignment="Left" Height="304" Margin="549,37,0,0" VerticalAlignment="Top" Width="625" Source="/Assets/pokemon.png"/>
+        </Frame>
     </Grid>
 </Page>

@@ -26,32 +26,66 @@ namespace IPokemon
         public MainPage()
         {
             this.InitializeComponent();
-            SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
-            SystemNavigationManager.GetForCurrentView().BackRequested += opcionVolver;
+            Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().SetPreferredMinSize (new Size(320, 320));
+            Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().VisibleBoundsChanged += MainPage_VisibleBoundsChanged;
 
+        }
+
+        private void MainPage_VisibleBoundsChanged(Windows.UI.ViewManagement.ApplicationView
+sender, object args)
+        {
+            var Width =
+           Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().VisibleBounds.Width;
+            if (Width >= 720)
+            {
+                sView.DisplayMode = SplitViewDisplayMode.CompactInline;
+                sView.IsPaneOpen = true;
+            }
+            else if (Width >= 360)
+            {
+                sView.DisplayMode = SplitViewDisplayMode.CompactOverlay;
+                sView.IsPaneOpen = false;
+            }
+            else
+            {
+                sView.DisplayMode = SplitViewDisplayMode.Overlay;
+                sView.IsPaneOpen = false;
+            }
         }
         
 
-        private void BtnInicio_Click(object sender, RoutedEventArgs e)
-        {
-            fmMain.Navigate(typeof(MainPage));
-        }
-
-        private void BtnCombate_Click(object sender, RoutedEventArgs e)
-        {
-            fmMain.Navigate(typeof(CombatePage));
-        }
-
-        private void BtnPokedex_Click(object sender, RoutedEventArgs e)
-        {
-            fmMain.Navigate(typeof(PokeDexPage));
-        }
+       
         private void opcionVolver(object sender, BackRequestedEventArgs e)
         {
             if (fmMain.BackStack.Any())
             {
                 fmMain.GoBack();
             }
+        }
+
+        private void BtnMenuPrincipal_Click(object sender, RoutedEventArgs e)
+        {
+            sView.IsPaneOpen = !sView.IsPaneOpen;
+        }
+
+        private void BtnInicio_Click_1(object sender, RoutedEventArgs e)
+        {
+            fmMain.Navigate(typeof(MainPage));
+        }
+
+        private void BtnPokedex_Click_1(object sender, RoutedEventArgs e)
+        {
+            fmMain.Navigate(typeof(PokeDexPage));
+        }
+
+        private void BtnCombate_Click_1(object sender, RoutedEventArgs e)
+        {
+            fmMain.Navigate(typeof(CombatePage));
+        }
+
+        private void BtnCaptura_Click(object sender, RoutedEventArgs e)
+        {
+            fmMain.Navigate(typeof(CapturaPokemon));
         }
     }
 }
