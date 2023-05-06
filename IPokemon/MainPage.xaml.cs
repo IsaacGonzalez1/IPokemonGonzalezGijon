@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,6 +26,32 @@ namespace IPokemon
         public MainPage()
         {
             this.InitializeComponent();
+            SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+            SystemNavigationManager.GetForCurrentView().BackRequested += opcionVolver;
+
+        }
+        
+
+        private void BtnInicio_Click(object sender, RoutedEventArgs e)
+        {
+            fmMain.Navigate(typeof(MainPage));
+        }
+
+        private void BtnCombate_Click(object sender, RoutedEventArgs e)
+        {
+            fmMain.Navigate(typeof(CombatePage));
+        }
+
+        private void BtnPokedex_Click(object sender, RoutedEventArgs e)
+        {
+            fmMain.Navigate(typeof(PokeDexPage));
+        }
+        private void opcionVolver(object sender, BackRequestedEventArgs e)
+        {
+            if (fmMain.BackStack.Any())
+            {
+                fmMain.GoBack();
+            }
         }
     }
 }

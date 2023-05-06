@@ -5,8 +5,10 @@
     xmlns:local="using:IPokemon"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    mc:Ignorable="d">
+    <Page.Background>
+        <ImageBrush ImageSource="/Assets/EscenarioFuecoco.jpg"/>
+    </Page.Background>
 
     <Grid>
         <Grid.RowDefinitions>
@@ -18,13 +20,14 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Row="1">
-            <Button x:Name="BtnInicio" Content="Inicio" Width="300" Height="104"/>
-            <Button x:Name="BtnPokedex" Content="Pokedex" Width="300" Height="104"/>
-            <Button x:Name="BtnCombate" Content="Combate" Width="300" Height="104"/>
+            <Button x:Name="BtnInicio" Content="Inicio" Width="300" Height="104" Click="BtnInicio_Click"/>
+            <Button x:Name="BtnPokedex" Content="Pokedex" Width="300" Height="104" Click="BtnPokedex_Click"/>
+            <Button x:Name="BtnCombate" Content="Combate" Width="300" Height="104" Click="BtnCombate_Click"/>
             <Button x:Name="BtnMiniJuegos" Content="Minijuegos" Width="300" Height="104"/>
-            <Image Height="100" Width="100"/>
-            <Image Height="100" Width="100" RenderTransformOrigin="0.42,0.46"/>
+            <Image x:Name="ImgAyuda" Height="100" Width="100"/>
+            <Image x:Name="ImgManualdelJuego" Height="100" Width="100" RenderTransformOrigin="0.42,0.46"/>
         </StackPanel>
-        <Frame x:Name="fmMain" Grid.Column="1" Grid.Row="1"/>        
+        <Frame x:Name="fmMain" Grid.Column="1" Grid.Row="1"/>
+
     </Grid>
 </Page>
