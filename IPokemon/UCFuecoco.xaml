@@ -2218,14 +2218,6 @@
             </Image.RenderTransform>
         </Image>
         <ProgressBar x:Name="pbStamina" Grid.Column="1" Margin="10,9,10,10" VerticalAlignment="Stretch" Foreground="#FFEFB61F" Background="#33F0F164" Value="75" Grid.Row="1" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="txtNombrePokemon" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="8" TextWrapping="Wrap" Text="FUECOCO" VerticalAlignment="Center" Height="80" Width="222" Foreground="Black" FontSize="40" TextAlignment="Center" SelectionHighlightColor="#FF949090" FontFamily="Consolas" Margin="446,0,0,0" FontStyle="Normal" TextDecorations="Underline" FontWeight="Bold">
-            <TextBlock.FocusVisualSecondaryBrush>
-                <ImageBrush ImageSource="/Assets/AtaquePokemon.jpg"/>
-            </TextBlock.FocusVisualSecondaryBrush>
-            <TextBlock.FocusVisualPrimaryBrush>
-                <ImageBrush ImageSource="/Assets/AtaquePokemon.jpg"/>
-            </TextBlock.FocusVisualPrimaryBrush>
-        </TextBlock>
         <Button x:Name="BtnPlacaje" Content="Placaje" Grid.Column="2" Grid.Row="2" Height="50" Width="133" HorizontalAlignment="Center" Click="BtnPlacaje_Click" Foreground="Black" FontFamily="Consolas" RenderTransformOrigin="0.5,0.5">
             <Button.RenderTransform>
                 <CompositeTransform ScaleX="2" ScaleY="2"/>

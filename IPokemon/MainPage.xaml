@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Page.Background>
-        <ImageBrush ImageSource="/Assets/fondoPokemon.jpg" Opacity="0.6"/>
+        <ImageBrush ImageSource="/Assets/BackgroundPokemon.jpg" Opacity="0.5"/>
     </Page.Background>
 
     <Grid>
@@ -19,7 +19,7 @@
             <ColumnDefinition Width="300"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <SplitView x:Name="sView" IsPaneOpen="True" DisplayMode="CompactInline" CompactPaneLength="30" Grid.Row="1" Opacity="0.87">
+        <SplitView x:Name="sView" IsPaneOpen="True" DisplayMode="CompactInline" CompactPaneLength="30" Grid.Row="1" Opacity="0.735" Background="White" PaneBackground="#FF2854BD">
             <SplitView.Pane>
                 <Grid>
                     <SymbolIcon x:Name="SymInicio" Grid.Row="0" Margin="4" Symbol="Home"></SymbolIcon>
@@ -57,13 +57,19 @@ FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" BorderBrush="{x:Null}
             <Border>
 
                 <Button x:Name="BtnMenuPrincipal" Margin="4" Click="BtnMenuPrincipal_Click">
-                    <FontIcon Foreground="White" Glyph="&#xE700;"
+                    <FontIcon Foreground="Black" Glyph="&#xE700;"
  FontFamily="Segoe MDL2 Assets" />
                 </Button>
             </Border>
         </Grid>
-        <Frame x:Name="fmMain" Margin="0,0,0,50" Grid.ColumnSpan="2" Grid.RowSpan="2">
-            <Image x:Name="ImgTitulo" HorizontalAlignment="Left" Height="304" Margin="549,37,0,0" VerticalAlignment="Top" Width="625" Source="/Assets/pokemon.png"/>
-        </Frame>
+        <Frame x:Name="fmMain" Margin="0,10,0,10" Grid.Column="1" Grid.Row="1">
+            <Image HorizontalAlignment="Center" Height="176" Margin="0,132,0,0" VerticalAlignment="Top" Width="450" Source="/Assets/IPOkemonTtl.png" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <CompositeTransform ScaleX="2.5" ScaleY="2.5"/>
+                </Image.RenderTransform>
+            </Image>
+        </Frame>
+        <TextBlock TextWrapping="Wrap" Text="TextBlock" Grid.Column="1" Margin="974,783,115,117" Grid.Row="1"/>
+
     </Grid>
 </Page>

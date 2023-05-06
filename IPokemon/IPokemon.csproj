@@ -143,14 +143,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\AtaquePokemon.jpg" />
+    <Content Include="Assets\BackgroundPokemon.jpg" />
     <Content Include="Assets\corazonPokemon.png" />
     <Content Include="Assets\corazonVida.png" />
     <Content Include="Assets\EscenarioFuecoco.jpg" />
     <Content Include="Assets\escudoAnimacion.png" />
+    <Content Include="Assets\FondoCombate.png" />
+    <Content Include="Assets\fondoCombatePokemon.jpg" />
     <Content Include="Assets\fondoPokemon.jpg" />
     <Content Include="Assets\gotamuerto.png" />
     <Content Include="Assets\imagenIpokemon.png" />
+    <Content Include="Assets\IPOkemonTtl.png" />
     <Content Include="Assets\maraca.jpg" />
+    <Content Include="Assets\PbEnemigo.png" />
+    <Content Include="Assets\PbLocalPrincipal.png" />
     <Content Include="Assets\pocionStamina.jpg" />
     <Content Include="Assets\PocionVida.png" />
     <Content Include="Assets\pokemon.png" />
