@@ -69,7 +69,6 @@ FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" BorderBrush="{x:Null}
                 </Image.RenderTransform>
             </Image>
         </Frame>
-        <TextBlock TextWrapping="Wrap" Text="TextBlock" Grid.Column="1" Margin="974,783,115,117" Grid.Row="1"/>
 
     </Grid>
 </Page>

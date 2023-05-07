@@ -5,10 +5,63 @@
     xmlns:local="using:IPokemon"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    mc:Ignorable="d">
+    <Page.Background>
+        <ImageBrush ImageSource="/Assets/pokedex 1.png" Opacity="0.6"/>
+    </Page.Background>
 
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="98*"/>
+            <ColumnDefinition Width="34*"/>
+            <ColumnDefinition Width="350*"/>
+            <ColumnDefinition Width="85*"/>
+            <ColumnDefinition Width="360*"/>
+            <ColumnDefinition Width="93*"/>
+            <ColumnDefinition Width="326*"/>
+            <ColumnDefinition Width="154*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="69*"/>
+            <RowDefinition Height="204*"/>
+            <RowDefinition Height="430*"/>
+            <RowDefinition Height="129*"/>
+            <RowDefinition Height="168*"/>
+        </Grid.RowDefinitions>
+        <Image HorizontalAlignment="Left" Height="67" VerticalAlignment="Center" Width="366" Source="/Assets/pokedex titulo.png" Grid.Column="4" Grid.ColumnSpan="2"/>
+        <Image HorizontalAlignment="Left" Height="418" Margin="86,0,0,0" VerticalAlignment="Center" Width="486" Source="/Assets/butterfree pokedex gif.gif" Grid.Row="2" Grid.ColumnSpan="5"/>
+        <Image HorizontalAlignment="Left" Height="674" Margin="325,142,0,0" VerticalAlignment="Top" Width="578" Source="/Assets/fuecoco gif.gif" RenderTransformOrigin="0.5,0.5" Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="4" Grid.RowSpan="4">
+            <Image.RenderTransform>
+                <CompositeTransform ScaleX="1.5" ScaleY="1.5"/>
+            </Image.RenderTransform>
+        </Image>
+        <Button x:Name="BtnButterfree" Margin="32,0,0,0" Grid.Row="3" Height="138" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Stretch">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/barra pokedex.png"/>
+            </Button.Background>
+            <TextBlock HorizontalAlignment="Left" Margin="-144,2,0,0" TextWrapping="Wrap" Text="BUTTERFREE" VerticalAlignment="Top" Height="18" Width="70" FontSize="10" Foreground="Black" FontFamily="Unispace" />
+        </Button>
+        <Button x:Name="BtnFuecoco" Margin="87,0,152,0" Grid.Row="3" Height="134" Grid.Column="5" Grid.RowSpan="2" VerticalAlignment="Top" Grid.ColumnSpan="3" BorderBrush="#FFE2E2E2" HorizontalAlignment="Stretch">
+            <Button.FocusVisualPrimaryBrush>
+                <ImageBrush ImageSource="/Assets/barra pokedex.png"/>
+            </Button.FocusVisualPrimaryBrush>
+            <Button.FocusVisualSecondaryBrush>
+                <ImageBrush ImageSource="/Assets/barra pokedex.png"/>
+            </Button.FocusVisualSecondaryBrush>
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/barra pokedex.png"/>
+            </Button.Background>
+            <TextBlock HorizontalAlignment="Left" Margin="-140,-2,0,0" TextWrapping="Wrap" Text="FUECOCO" VerticalAlignment="Top" FontFamily="Unispace" Foreground="Black" Height="14" Width="51" RenderTransformOrigin="0.5,0.5" FontSize="10">
+                <TextBlock.RenderTransform>
+                    <CompositeTransform Rotation="0"/>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+        </Button>
+        <TextBox Grid.Column="2" HorizontalAlignment="Left" Text="Bienvenido a la IPOkedex, clickea en los nombres de los Pokemon para dirigirte a su respectiva información" VerticalAlignment="Top" Foreground="Black" Grid.ColumnSpan="6" Height="212" Grid.RowSpan="3" Width="1216" TextAlignment="Center" FontSize="40" FontFamily="Unispace" TextWrapping="Wrap" Margin="0,67,0,0">
+            <TextBox.Background>
+                <ImageBrush ImageSource="/Assets/Panel Nombre IPOkedex.png"/>
+            </TextBox.Background>
+        </TextBox>
 
     </Grid>
 </Page>
