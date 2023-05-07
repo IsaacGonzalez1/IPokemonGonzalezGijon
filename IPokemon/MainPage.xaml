@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Page.Background>
-        <ImageBrush ImageSource="/Assets/BackgroundPokemon.jpg" Opacity="0.5"/>
+        <ImageBrush ImageSource="/Assets/BackgroundIPOkemon.jpg" Opacity="0.625"/>
     </Page.Background>
 
     <Grid>
@@ -21,12 +21,12 @@
         </Grid.ColumnDefinitions>
         <SplitView x:Name="sView" IsPaneOpen="True" DisplayMode="CompactInline" CompactPaneLength="30" Grid.Row="1" Opacity="0.735" Background="White" PaneBackground="#FF2854BD">
             <SplitView.Pane>
-                <Grid>
+                <Grid Margin="0,0,20,0">
                     <SymbolIcon x:Name="SymInicio" Grid.Row="0" Margin="4" Symbol="Home"></SymbolIcon>
                     <SymbolIcon x:Name="SymPokedex" Grid.Row="1" Margin="4" Symbol="Pictures"></SymbolIcon>
                     <SymbolIcon x:Name="SymCombate" Grid.Row="2" Margin="4" Symbol="People"></SymbolIcon>
                     <SymbolIcon x:Name="SymCaptura" Grid.Row="3" Margin="4" Symbol="Camera"></SymbolIcon>
-
+                    <SymbolIcon x:Name="SymManual" Grid.Row="4" Margin="4,1,4,0" Symbol="PreviewLink"></SymbolIcon>
 
                     <Button x:Name="BtnInicio" Grid.Column="1"  Content="Inicio" Height="50"
                         Background="{x:Null}" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left"
@@ -38,9 +38,12 @@ Margin="0,0,25,0" Click="BtnPokedex_Click_1" FontFamily="Unispace"/>
                     <Button x:Name="BtnCombate" Grid.Row="2" Grid.Column="1" Content="Combate" Height="50" Background="{x:Null}"
 FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" BorderBrush="{x:Null}" 
 Margin="0,0,25,0" Click="BtnCombate_Click_1" FontFamily="Unispace"/>
+                    <Button x:Name="BtnManual" Grid.Row="4" Grid.Column="1" Content="Manual de Juego" Height="50" Background="{x:Null}"
+FontSize="20" FontWeight="Bold" BorderBrush="{x:Null}" FontFamily="Unispace" Width="206" Click="BtnManual_Click"/>
                     <Button x:Name="BtnCaptura" Grid.Row="3" Grid.Column="1" Content="Captura" Height="50" Background="{x:Null}"
 FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" BorderBrush="{x:Null}" Margin="0,0,25,0" Click="BtnCaptura_Click" FontFamily="Unispace"/>
                     <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
                         <RowDefinition Height="Auto"></RowDefinition>
                         <RowDefinition Height="Auto"></RowDefinition>
                         <RowDefinition Height="Auto"></RowDefinition>
@@ -62,7 +65,7 @@ FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" BorderBrush="{x:Null}
                 </Button>
             </Border>
         </Grid>
-        <Frame x:Name="fmMain" Margin="0,10,0,10" Grid.Column="1" Grid.Row="1">
+        <Frame x:Name="fmMain" Grid.Column="1" Grid.Row="1">
             <Image HorizontalAlignment="Center" Height="176" Margin="0,132,0,0" VerticalAlignment="Top" Width="450" Source="/Assets/IPOkemonTtl.png" RenderTransformOrigin="0.5,0.5">
                 <Image.RenderTransform>
                     <CompositeTransform ScaleX="2.5" ScaleY="2.5"/>

@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Page.Background>
-        <ImageBrush ImageSource="/Assets/pokedex 1.png" Opacity="0.6"/>
+        <ImageBrush ImageSource="/Assets/pokedex 1.png" Opacity="1"/>
     </Page.Background>
 
     <Grid>
@@ -39,9 +39,15 @@
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/barra pokedex.png"/>
             </Button.Background>
-            <TextBlock HorizontalAlignment="Left" Margin="-144,2,0,0" TextWrapping="Wrap" Text="BUTTERFREE" VerticalAlignment="Top" Height="18" Width="70" FontSize="10" Foreground="Black" FontFamily="Unispace" />
+            <TextBlock HorizontalAlignment="Left" Margin="-157,-3,0,0" TextWrapping="Wrap" Text="BUTTERFREE" VerticalAlignment="Top" Height="18" Width="76" FontSize="12" Foreground="Black" FontFamily="Unispace" />
         </Button>
-        <Button x:Name="BtnFuecoco" Margin="87,0,152,0" Grid.Row="3" Height="134" Grid.Column="5" Grid.RowSpan="2" VerticalAlignment="Top" Grid.ColumnSpan="3" BorderBrush="#FFE2E2E2" HorizontalAlignment="Stretch">
+        <Button x:Name="BtnFuecoco" Margin="87,0,152,0" Grid.Row="3" Height="134" Grid.Column="5" Grid.RowSpan="2" VerticalAlignment="Top" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" Click="BtnFuecoco_Click">
+            <Button.Foreground>
+                <ImageBrush ImageSource="/Assets/barra pokedex.png"/>
+            </Button.Foreground>
+            <Button.BorderBrush>
+                <ImageBrush ImageSource="/Assets/barra pokedex.png"/>
+            </Button.BorderBrush>
             <Button.FocusVisualPrimaryBrush>
                 <ImageBrush ImageSource="/Assets/barra pokedex.png"/>
             </Button.FocusVisualPrimaryBrush>
@@ -51,17 +57,17 @@
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/barra pokedex.png"/>
             </Button.Background>
-            <TextBlock HorizontalAlignment="Left" Margin="-140,-2,0,0" TextWrapping="Wrap" Text="FUECOCO" VerticalAlignment="Top" FontFamily="Unispace" Foreground="Black" Height="14" Width="51" RenderTransformOrigin="0.5,0.5" FontSize="10">
+            <TextBlock HorizontalAlignment="Left" Margin="-144,-7,0,0" TextWrapping="Wrap" Text="FUECOCO" VerticalAlignment="Top" FontFamily="Unispace" Foreground="Black" Height="14" Width="59" RenderTransformOrigin="0.5,0.5" FontSize="12">
                 <TextBlock.RenderTransform>
                     <CompositeTransform Rotation="0"/>
                 </TextBlock.RenderTransform>
             </TextBlock>
         </Button>
-        <TextBox Grid.Column="2" HorizontalAlignment="Left" Text="Bienvenido a la IPOkedex, clickea en los nombres de los Pokemon para dirigirte a su respectiva información" VerticalAlignment="Top" Foreground="Black" Grid.ColumnSpan="6" Height="212" Grid.RowSpan="3" Width="1216" TextAlignment="Center" FontSize="40" FontFamily="Unispace" TextWrapping="Wrap" Margin="0,67,0,0">
-            <TextBox.Background>
-                <ImageBrush ImageSource="/Assets/Panel Nombre IPOkedex.png"/>
-            </TextBox.Background>
-        </TextBox>
+        <Image Grid.Column="2" Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="212" Margin="239,4,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="908" Source="/Assets/Panel Nombre IPOkedex definitivo.png" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <Image.RenderTransform>
+                <CompositeTransform SkewX="0" TranslateX="0"/>
+            </Image.RenderTransform>
+        </Image>
 
     </Grid>
 </Page>

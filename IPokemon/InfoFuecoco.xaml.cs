@@ -26,5 +26,10 @@ namespace IPokemon
         {
             this.InitializeComponent();
         }
+
+        private void BtnVolverPokedex_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(PokeDexPage));
+        }
     }
 }

@@ -70,7 +70,7 @@ sender, object args)
 
         private void BtnInicio_Click_1(object sender, RoutedEventArgs e)
         {
-            fmMain.Navigate(typeof(MainPage));
+            fmMain.Navigate(typeof(InicioIPOkemon));
         }
 
         private void BtnPokedex_Click_1(object sender, RoutedEventArgs e)
@@ -86,6 +86,11 @@ sender, object args)
         private void BtnCaptura_Click(object sender, RoutedEventArgs e)
         {
             fmMain.Navigate(typeof(CapturaPokemon));
+        }
+
+        private void BtnManual_Click(object sender, RoutedEventArgs e)
+        {
+            fmMain.Navigate(typeof(ManualDelJuego));
         }
     }
 }

@@ -128,8 +128,14 @@
     <Compile Include="InfoFuecoco.xaml.cs">
       <DependentUpon>InfoFuecoco.xaml</DependentUpon>
     </Compile>
+    <Compile Include="InicioIPOkemon.xaml.cs">
+      <DependentUpon>InicioIPOkemon.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ManualDelJuego.xaml.cs">
+      <DependentUpon>ManualDelJuego.xaml</DependentUpon>
     </Compile>
     <Compile Include="PokeDexPage.xaml.cs">
       <DependentUpon>PokeDexPage.xaml</DependentUpon>
@@ -147,6 +153,7 @@
   <ItemGroup>
     <Content Include="Assets\AtaquePokemon.jpg" />
     <Content Include="Assets\backgroundInfoFuecoco.jpg" />
+    <Content Include="Assets\BackgroundIPOkemon.jpg" />
     <Content Include="Assets\BackgroundPokemon.jpg" />
     <Content Include="Assets\barra pokedex.png" />
     <Content Include="Assets\butterfree pokedex gif.gif" />
@@ -162,7 +169,10 @@
     <Content Include="Assets\gotamuerto.png" />
     <Content Include="Assets\imagenIpokemon.png" />
     <Content Include="Assets\IPOkemonTtl.png" />
+    <Content Include="Assets\Manual IPOkemon.png" />
     <Content Include="Assets\maraca.jpg" />
+    <Content Include="Assets\Panel Nombre IPOkedex definitivo.png" />
+    <Content Include="Assets\Panel Nombre IPOkedex INICIO.png" />
     <Content Include="Assets\Panel Nombre IPOkedex.png" />
     <Content Include="Assets\PbEnemigo.png" />
     <Content Include="Assets\PbLocalPrincipal.png" />
@@ -208,9 +218,17 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="InicioIPOkemon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ManualDelJuego.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PokeDexPage.xaml">
       <SubType>Designer</SubType>
