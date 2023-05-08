@@ -152,11 +152,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\AtaquePokemon.jpg" />
+    <Content Include="Assets\backgroundCapturar.png" />
     <Content Include="Assets\backgroundInfoFuecoco.jpg" />
     <Content Include="Assets\BackgroundIPOkemon.jpg" />
     <Content Include="Assets\BackgroundPokemon.jpg" />
     <Content Include="Assets\barra pokedex.png" />
+    <Content Include="Assets\botonpokeball.png" />
     <Content Include="Assets\butterfree pokedex gif.gif" />
+    <Content Include="Assets\CapturandoPokeball.png" />
+    <Content Include="Assets\CapturaPokeball.png" />
     <Content Include="Assets\corazonPokemon.png" />
     <Content Include="Assets\corazonVida.png" />
     <Content Include="Assets\EscenarioFuecoco.jpg" />

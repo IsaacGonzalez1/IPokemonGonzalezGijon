@@ -239,5 +239,23 @@ namespace IPokemon
                 this.pbHealth.Value = value;
             }
         }
+
+        private void BtnPokeball_Click(object sender, RoutedEventArgs e)
+        {
+            Storyboard sbCaptura = (Storyboard)this.Resources["Captura"];
+            Storyboard sb = (Storyboard)this.Resources["AnimacionInicio"];
+            sb.Stop();
+            sbCaptura.Begin();
+
+            sbCaptura.Completed += finCaptura;
+        }
+        void finCaptura(object sender, object e)
+        {
+            Storyboard sb = (Storyboard)this.Resources["AnimacionInicio"];
+            Storyboard sbCaptura = (Storyboard)sender;
+            sbCaptura.Completed -= finCaptura;
+            sbCaptura.Stop();
+            sb.Begin();
+        }
     }
 }

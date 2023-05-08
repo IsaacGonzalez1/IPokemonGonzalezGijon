@@ -1700,6 +1700,71 @@
             </PointAnimationUsingKeyFrames>
             <DoubleAnimation Duration="00:00:01" Storyboard.TargetName="BrazoDrch" To="33.526" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)"/>
         </Storyboard>
+        <Storyboard x:Name="Captura">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CapturaPokeball" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:01">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="CapturaPokeball" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="-239.465">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <BackEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="CapturaPokeball" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="-251.621">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <BackEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="CapturandoPokemon" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:01.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="CapturandoPokemon" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)">
+                <EasingDoubleKeyFrame KeyTime="00:00:01.1000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="-38.898">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <ElasticEase EasingMode="EaseIn"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="CapturandoPokemon" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)">
+                <EasingDoubleKeyFrame KeyTime="00:00:01.1000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="-36.467">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <ElasticEase EasingMode="EaseIn"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Fuecoco" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:02">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:03">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
 
     </UserControl.Resources>
 
@@ -2265,6 +2330,20 @@
         </Image>
         <Image x:Name="StaminaPokemon" HorizontalAlignment="Center" Height="68" Grid.Row="1" VerticalAlignment="Center" Width="76" Source="/Assets/staminaPokemon.jpg"/>
         <Image x:Name="PocionStamina" Grid.Column="3" HorizontalAlignment="Left" Height="89" Grid.Row="1" VerticalAlignment="Center" Width="93" Source="/Assets/pocionStamina.jpg" Margin="4,0,0,0" PointerReleased="PocionStamina_PointerReleased"/>
-
+        <Image x:Name="CapturaPokeball" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="579,33,0,0" Grid.RowSpan="2" Grid.Row="7" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.485,0.501" Source="/Assets/CapturaPokeball.png" Visibility="Collapsed">
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <Button x:Name="BtnPokeball" Grid.Column="1" Content="" Height="67" Margin="57,10,0,0" Grid.Row="7" VerticalAlignment="Top" Width="72" Click="BtnPokeball_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/botonpokeball.png"/>
+            </Button.Background>
+        </Button>
+        <Image x:Name="CapturandoPokemon" Grid.Column="1" HorizontalAlignment="Left" Height="107" Margin="229,22,0,0" Grid.RowSpan="2" Grid.Row="4" VerticalAlignment="Top" Width="168" Source="/Assets/CapturandoPokeball.png" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
     </Grid>
 </UserControl>
