@@ -30,7 +30,7 @@ namespace IPokemon
 
             this.UCButterfreeCombate.verNombre(false);
             this.UCFuecocoCombate.verIconos(false);
-            this.UCButterfreeCombate.verIconos(false);
+            this.UCButterfreeCombate.verAtaqueDefensa(false);
 
             this.UCFuecocoCombate.MyVida = 100.0;
             this.UCButterfreeCombate.MyVida = 100.0;

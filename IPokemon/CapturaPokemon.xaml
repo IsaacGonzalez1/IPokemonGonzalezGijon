@@ -16,45 +16,6 @@
     <Grid>
         <local:UCFuecoco x:Name="ucFuegococoCapturar" HorizontalAlignment="Center" Margin="0,-10,0,0" VerticalAlignment="Top" Height="1010" Width="1500" Visibility="Collapsed"/>
         <local:UCButterfree x:Name="ucButterfreeCapturar" Visibility="Collapsed"/>
-        <Rectangle x:Name="preguntaFondo" Stroke="Black" Margin="253,283,271,539">
-            <Rectangle.Fill>
-                <SolidColorBrush Color="#FFB182E3" Opacity="0.9"/>
-            </Rectangle.Fill>
-            <Rectangle.FocusVisualPrimaryBrush>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black"/>
-                    <GradientStop Color="White" Offset="1"/>
-                </LinearGradientBrush>
-            </Rectangle.FocusVisualPrimaryBrush>
-        </Rectangle>
-        <Rectangle x:Name="preguntaFondo2" Stroke="Black" Margin="269,301,285,559" Fill="#FFFBF4F4"/>
-        <Image x:Name="textoPregunta" Margin="325,345,394,591" Source="/Assets/textoCaptura.png"/>
-        <Rectangle x:Name="uc1Fondo" Stroke="Black" Margin="121,661,877,206">
-            <Rectangle.Fill>
-                <SolidColorBrush Color="#FFB182E3" Opacity="0.9"/>
-            </Rectangle.Fill>
-            <Rectangle.FocusVisualPrimaryBrush>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black"/>
-                    <GradientStop Color="White" Offset="1"/>
-                </LinearGradientBrush>
-            </Rectangle.FocusVisualPrimaryBrush>
-        </Rectangle>
-        <Rectangle x:Name="uc1Fondo2" Stroke="Black" Margin="129,674,884,221" Fill="#FFFBF4F4" PointerReleased="capturarFuegococo_click"/>
-        <Image x:Name="letraFuecoco" Source="/Assets/letraFuecoco.png" Margin="280,696,1033,237"/>
-        <Rectangle x:Name="uc2Fondo" Stroke="Black" Margin="862,664,136,203">
-            <Rectangle.Fill>
-                <SolidColorBrush Color="#FFB182E3" Opacity="0.9"/>
-            </Rectangle.Fill>
-            <Rectangle.FocusVisualPrimaryBrush>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black"/>
-                    <GradientStop Color="White" Offset="1"/>
-                </LinearGradientBrush>
-            </Rectangle.FocusVisualPrimaryBrush>
-        </Rectangle>
-        <Rectangle x:Name="uc2Fondo2" Stroke="Black" Margin="870,677,143,218" Fill="#FFFBF4F4" PointerReleased="capturarButterfree_click"/>
-        <Image x:Name="letraButterfree" Source="/Assets/letraButterfree.png" Margin="988,675,259,234"/>
 
         <Button x:Name="BtnVolverCaptura" Content="Volver a la Captura" Margin="56,881,0,0" FontSize="29" FontFamily="Unispace" VerticalAlignment="Top" FocusVisualPrimaryBrush="#FFE5DDDD" Foreground="#FFFBF8F8" Click="btnVolverCaptura_click" >
             <Button.Background>
@@ -62,6 +23,21 @@
                     <GradientStop Color="#FFCF5FD5"/>
                     <GradientStop Color="#FF86459E" Offset="1"/>
                 </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnCapButterfree" Content="Butterfree" Height="138" Margin="901,658,0,0" VerticalAlignment="Top" Width="374" FontFamily="MS Gothic" FontSize="40" FontWeight="Bold" Click="btnCapturarButterfree_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Panel Nombre IPOkedex.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnCapFuecoco" Content="Fuecoco" Height="138" Margin="215,658,0,0" VerticalAlignment="Top" Width="374" FontFamily="MS Gothic" FontSize="40" FontWeight="Bold" Click="btnCapturarFuecoco_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Panel Nombre IPOkedex.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnCapPregunta" Content="¿Qué Pokemón desea capturar?" Height="238" Margin="255,232,0,0" VerticalAlignment="Top" Width="984" FontFamily="MS Gothic" FontSize="40" FontWeight="Bold">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Panel Nombre IPOkedex.png"/>
             </Button.Background>
         </Button>
 

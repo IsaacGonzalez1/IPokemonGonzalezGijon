@@ -521,14 +521,14 @@
             </Canvas>
         </Viewbox>
 
-        <Viewbox Grid.Row="2" VerticalAlignment="Top">
+        <Viewbox x:Name="vboxDefensa" Grid.Row="2" VerticalAlignment="Top">
             <Canvas Grid.Row="2" Height="100" VerticalAlignment="Top" PointerReleased="defendersepinchar" Width="108">
                 <Image Height="71" Width="93" HorizontalAlignment="Right" VerticalAlignment="Top" Canvas.Left="6" Source="/Assets/mariposa.png" Canvas.Top="4"/>
                 <TextBlock TextWrapping="Wrap" Text="DEFENDERSE" VerticalAlignment="Center" HorizontalAlignment="Left" Canvas.Left="9" Canvas.Top="73" FontFamily="Arial Black" FocusVisualPrimaryBrush="#FFC6AAC1" Foreground="#FFD6B2D0" FontSize="11"/>
             </Canvas>
         </Viewbox>
 
-        <Viewbox Grid.Row="2" VerticalAlignment="Top" Grid.Column="2">
+        <Viewbox x:Name="vboxAtaque" Grid.Row="2" VerticalAlignment="Top" Grid.Column="2">
             <Canvas Grid.Row="2" Height="100" VerticalAlignment="Top" Width="123">
                 <Image Height="70" Width="73" Canvas.Left="20" Source="/Assets/lucha.png" PointerReleased="atacarpinchar" Canvas.Top="2"/>
                 <TextBlock TextWrapping="Wrap" Text="ATACAR" Canvas.Left="26" Canvas.Top="71" FontFamily="Arial Black" FocusVisualPrimaryBrush="#FFD6B2D0" Foreground="#FFD6B2D0" HorizontalAlignment="Left" VerticalAlignment="Top"/>

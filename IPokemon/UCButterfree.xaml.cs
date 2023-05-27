@@ -121,6 +121,20 @@ namespace IPokemon
 
         }
 
+        public void verAtaqueDefensa(bool ver)
+        {
+            if (ver)
+            {
+                vboxAtaque.Visibility= Visibility.Visible;
+                vboxDefensa.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                vboxAtaque.Visibility = Visibility.Collapsed;
+                vboxDefensa.Visibility = Visibility.Collapsed;
+            }
+        }
+
         
         /*-----------------------------------*/
 
