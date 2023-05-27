@@ -37,6 +37,47 @@ namespace IPokemon
             sb.Begin();
         }
 
+        public void recibirDaño()
+        {
+            reducirBarra();
+        }
+
+        public void activarAtaque()
+        {
+            mordisco();
+            placaje();
+            ascuas();
+        }
+        public void activarDefensa()
+        {
+            recibirDaño();
+        }
+        public void celebrarVictoria()
+        {
+            danza();
+        }
+
+        public void verIconos(bool ver)
+        {
+            if (ver)
+            {
+                BtnAscuas.Visibility = Visibility.Visible;
+                BtnDanza.Visibility = Visibility.Visible;
+                BtnMordisco.Visibility = Visibility.Visible;
+                BtnPlacaje.Visibility = Visibility.Visible;
+                BtnRecibirDaño.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                BtnAscuas.Visibility = Visibility.Collapsed;
+                BtnDanza.Visibility = Visibility.Collapsed;
+                BtnMordisco.Visibility = Visibility.Collapsed;
+                BtnPlacaje.Visibility = Visibility.Collapsed;
+                BtnRecibirDaño.Visibility = Visibility.Collapsed;
+            }
+
+        }
+
         //VIDA
         private void Image_PointerReleased(object sender, PointerRoutedEventArgs e)
         {
@@ -112,7 +153,8 @@ namespace IPokemon
 
 
         //PLACAJE
-        private void BtnPlacaje_Click(object sender, RoutedEventArgs e)
+        
+        private void placaje()
         {
             this.pbStamina.Value -= 10;
             Storyboard sbPlacaje = (Storyboard)this.Resources["PlacajeFuecoco"];
@@ -121,6 +163,10 @@ namespace IPokemon
             sbPlacaje.Begin();
 
             sbPlacaje.Completed += finMovimientoPlacaje;
+        }
+        private void BtnPlacaje_Click(object sender, RoutedEventArgs e)
+        {
+            placaje();
         }
         void finMovimientoPlacaje(object sender, object e)
         {
@@ -132,7 +178,7 @@ namespace IPokemon
         }
 
         //ASCUAS
-        private void BtnAscuas_Click(object sender, RoutedEventArgs e)
+        private void ascuas()
         {
             this.pbStamina.Value -= 10;
             Storyboard sbAscuas = (Storyboard)this.Resources["Ascuas"];
@@ -143,7 +189,11 @@ namespace IPokemon
             sbAscuas.Completed += finMovimientoAscuas;
 
 
+        }
+        private void BtnAscuas_Click(object sender, RoutedEventArgs e)
+        {
 
+            ascuas();
         }
         void finMovimientoAscuas(object sender, object e)
         {
@@ -158,7 +208,7 @@ namespace IPokemon
 
 
         //DANZA MARACA
-        private void BtnDanza_Click(object sender, RoutedEventArgs e)
+        private void danza()
         {
             this.pbStamina.Value -= 10;
             Storyboard sbDanza = (Storyboard)this.Resources["DanzaMaraca"];
@@ -167,6 +217,10 @@ namespace IPokemon
             sbDanza.Begin();
 
             sbDanza.Completed += finMovimientoDanza;
+        }
+        private void BtnDanza_Click(object sender, RoutedEventArgs e)
+        {
+            danza();
 
         }
 
@@ -184,8 +238,9 @@ namespace IPokemon
 
         //MORDISCO
 
-        private void BtnMordisco_Click(object sender, RoutedEventArgs e)
+        private void mordisco()
         {
+
             this.pbStamina.Value -= 10;
             Storyboard sbMordisco = (Storyboard)this.Resources["Mordisco"];
             Storyboard sb = (Storyboard)this.Resources["AnimacionInicio"];
@@ -193,9 +248,10 @@ namespace IPokemon
             sbMordisco.Begin();
 
             sbMordisco.Completed += finMovimientoMordisco;
-
-
-
+        }
+        private void BtnMordisco_Click(object sender, RoutedEventArgs e)
+        {
+            mordisco();
 
         }
         void finMovimientoMordisco(object sender, object e)
@@ -208,9 +264,8 @@ namespace IPokemon
         }
 
         //RECIBIR DAÑO
-        private void BtnRecibirDaño_Click(object sender, RoutedEventArgs e)
+        private void recibirdaño()
         {
-
             Storyboard sbHerido = (Storyboard)this.Resources["EstadoHerido"];
             Storyboard sb = (Storyboard)this.Resources["AnimacionInicio"];
             sb.Stop();
@@ -219,6 +274,12 @@ namespace IPokemon
 
             sbHerido.Completed += finEstadoHerido;
         }
+        private void BtnRecibirDaño_Click(object sender, RoutedEventArgs e)
+        {
+            recibirdaño();
+            
+        }
+        
 
         void finEstadoHerido(object sender, object e)
         {
@@ -239,7 +300,23 @@ namespace IPokemon
                 this.pbHealth.Value = value;
             }
         }
+        public double MyEnergy
+        {
+            get
+            {
+                return this.pbStamina.Value;    
+            }
+            set
+            {
+                this.pbStamina.Value= value;
+            }
+        }
 
+        public void verBolaPokemon(bool ver)
+        {
+            if (ver) BtnPokeball.Visibility = Visibility.Visible;
+            else BtnPokeball.Visibility= Visibility.Collapsed;
+        }
         private void BtnPokeball_Click(object sender, RoutedEventArgs e)
         {
             Storyboard sbCaptura = (Storyboard)this.Resources["Captura"];

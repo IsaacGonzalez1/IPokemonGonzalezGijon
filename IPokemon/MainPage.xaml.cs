@@ -13,6 +13,10 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.ViewManagement;
+using Windows.UI.Notifications;
+using Windows.UI.StartScreen;
+
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0xc0a
 
@@ -26,26 +30,36 @@ namespace IPokemon
         public MainPage()
         {
             this.InitializeComponent();
-            Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().SetPreferredMinSize (new Size(320, 320));
-            Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().VisibleBoundsChanged += MainPage_VisibleBoundsChanged;
+
+
+            SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility =
+            AppViewBackButtonVisibility.Visible;
+            SystemNavigationManager.GetForCurrentView().BackRequested += opcionVolver;
+
+            ApplicationView.GetForCurrentView().SetPreferredMinSize (new Size(320, 320));
+            ApplicationView.GetForCurrentView().VisibleBoundsChanged += MainPage_VisibleBoundsChanged;
 
         }
 
+
+
         private void MainPage_VisibleBoundsChanged(Windows.UI.ViewManagement.ApplicationView
-sender, object args)
+            sender, object args)
         {
-            var Width =
-           Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().VisibleBounds.Width;
+            var Width = ApplicationView.GetForCurrentView().VisibleBounds.Width;
+            //grande: menú abierto y lo demás
             if (Width >= 720)
             {
                 sView.DisplayMode = SplitViewDisplayMode.CompactInline;
                 sView.IsPaneOpen = true;
             }
+            //se oculta el menú
             else if (Width >= 360)
             {
                 sView.DisplayMode = SplitViewDisplayMode.CompactOverlay;
                 sView.IsPaneOpen = false;
             }
+            //se ocultan los iconos de menú
             else
             {
                 sView.DisplayMode = SplitViewDisplayMode.Overlay;
@@ -92,5 +106,87 @@ sender, object args)
         {
             fmMain.Navigate(typeof(ManualDelJuego));
         }
+
+        /*
+        private void incializar()
+        {
+            TileContent content = new TileContent()
+            {
+                Visual = new TileVisual()
+                {
+                    TileMedium = new TileBinding()
+                    {
+                        Content = new TileBindingContentAdaptive()
+                        {
+                            Children =
+                            {
+                                 new AdaptiveText()
+                            {
+                        Text = "IPOkemon", HintStyle = AdaptiveTextStyle.Subtitle
+                            },
+                            new AdaptiveText()
+                            {
+                                Text = "Un proyecto de IPO2",
+                    HintStyle = AdaptiveTextStyle.CaptionSubtle
+                     },
+                     }
+                        }
+                    },
+                    TileWide = new TileBinding()
+                    {
+                        Branding = TileBranding.NameAndLogo,
+                        DisplayName = "Version 1.0",
+                        Content = new TileBindingContentAdaptive()
+                        {
+                            Children = {
+                 new AdaptiveText()
+                {
+                 Text = "IPOkemon",
+                 HintStyle = AdaptiveTextStyle.Subtitle
+                 },
+                 new AdaptiveText()
+                 {
+                 Text = "Un Proyecto de IPO2",
+                 HintStyle = AdaptiveTextStyle.CaptionSubtle
+                 },
+                 new AdaptiveText()
+                 {
+                 Text = "Una aplicación sobre Pokemon hecha con tecnología UWP",
+                HintWrap = true,
+                 }
+                 }
+                        }
+                    },
+                    TileLarge = new TileBinding()
+                    {
+                        Content = new TileBindingContentAdaptive()
+                        {
+                            Children = {
+                 new AdaptiveText()
+                {
+                 Text = "IPOkemon",
+                HintStyle = AdaptiveTextStyle.Subtitle
+                 },
+                 new AdaptiveText()
+                 {
+                 Text = "Un Proyecto de IPO2",
+                HintStyle = AdaptiveTextStyle.CaptionSubtle
+                 },
+                 new AdaptiveText()
+                {
+                 Text = "Una aplicación sobre Pokemon hecha con tecnología UWP",
+                 HintStyle = AdaptiveTextStyle.CaptionSubtle
+                 }
+                 }
+                        }
+                    },
+                }
+            };
+            var notification = new TileNotification(content.GetXml());
+            notification.ExpirationTime = DateTimeOffset.UtcNow.AddSeconds(30);
+            var updater = TileUpdateManager.CreateTileUpdaterForApplication();
+            updater.Update(notification);
+        }*/
+
     }
 }

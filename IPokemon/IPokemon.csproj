@@ -125,6 +125,9 @@
     <Compile Include="CombatePage.xaml.cs">
       <DependentUpon>CombatePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="InfoButterfree.xaml.cs">
+      <DependentUpon>InfoButterfree.xaml</DependentUpon>
+    </Compile>
     <Compile Include="InfoFuecoco.xaml.cs">
       <DependentUpon>InfoFuecoco.xaml</DependentUpon>
     </Compile>
@@ -141,6 +144,9 @@
       <DependentUpon>PokeDexPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UCButterfree.xaml.cs">
+      <DependentUpon>UCButterfree.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UCFuecoco.xaml.cs">
       <DependentUpon>UCFuecoco.xaml</DependentUpon>
     </Compile>
@@ -157,37 +163,57 @@
     <Content Include="Assets\BackgroundIPOkemon.jpg" />
     <Content Include="Assets\BackgroundPokemon.jpg" />
     <Content Include="Assets\barra pokedex.png" />
+    <Content Include="Assets\bolapokemon.png" />
     <Content Include="Assets\botonpokeball.png" />
     <Content Include="Assets\butterfree pokedex gif.gif" />
     <Content Include="Assets\CapturandoPokeball.png" />
     <Content Include="Assets\CapturaPokeball.png" />
     <Content Include="Assets\corazonPokemon.png" />
     <Content Include="Assets\corazonVida.png" />
+    <Content Include="Assets\cuadradoBlanco.png" />
+    <Content Include="Assets\cuadradoFondo.png" />
+    <Content Include="Assets\energia.png" />
     <Content Include="Assets\EscenarioFuecoco.jpg" />
     <Content Include="Assets\escudoAnimacion.png" />
+    <Content Include="Assets\evolucion1.png" />
+    <Content Include="Assets\evolucion3.png" />
     <Content Include="Assets\evolucionPokemonFuecoco.png" />
+    <Content Include="Assets\Evolucion_2.png" />
+    <Content Include="Assets\evolucion_Butterfree.png" />
+    <Content Include="Assets\flecha.png" />
     <Content Include="Assets\FondoCombate.png" />
     <Content Include="Assets\fondoCombatePokemon.jpg" />
+    <Content Include="Assets\fondoInfoButterfree.png" />
     <Content Include="Assets\fondoPokemon.jpg" />
     <Content Include="Assets\fuecoco gif.gif" />
     <Content Include="Assets\gotamuerto.png" />
+    <Content Include="Assets\gota_sudor.png" />
     <Content Include="Assets\imagenIpokemon.png" />
+    <Content Include="Assets\imgjugadorPersona.png" />
+    <Content Include="Assets\imgjugadorRobot.png" />
     <Content Include="Assets\IPOkemonTtl.png" />
+    <Content Include="Assets\letraButterfree.png" />
+    <Content Include="Assets\letraFuecoco.png" />
+    <Content Include="Assets\lucha.png" />
     <Content Include="Assets\Manual IPOkemon.png" />
     <Content Include="Assets\maraca.jpg" />
+    <Content Include="Assets\mariposa.png" />
     <Content Include="Assets\Panel Nombre IPOkedex definitivo.png" />
     <Content Include="Assets\Panel Nombre IPOkedex INICIO.png" />
     <Content Include="Assets\Panel Nombre IPOkedex.png" />
     <Content Include="Assets\PbEnemigo.png" />
     <Content Include="Assets\PbLocalPrincipal.png" />
+    <Content Include="Assets\pocionEnergia.png" />
     <Content Include="Assets\pocionStamina.jpg" />
     <Content Include="Assets\PocionVida.png" />
+    <Content Include="Assets\PocionVida2.png" />
     <Content Include="Assets\pokedex 1.png" />
     <Content Include="Assets\pokedex 11.jpg" />
     <Content Include="Assets\pokedex titulo.png" />
     <Content Include="Assets\pokemon.png" />
     <Content Include="Assets\pum.png" />
     <Content Include="Assets\sombrero fuecoco.jpg" />
+    <Content Include="Assets\splash.png" />
     <Content Include="Assets\sprit 3 mordisco.png" />
     <Content Include="Assets\sprite 1 mordisco.png" />
     <Content Include="Assets\sprite 2 mordisco.png" />
@@ -195,7 +221,11 @@
     <Content Include="Assets\sprite_fuego_2.png" />
     <Content Include="Assets\sprite_fuego_3.png" />
     <Content Include="Assets\staminaPokemon.jpg" />
+    <Content Include="Assets\textoCaptura.png" />
     <Content Include="Assets\tirita.png" />
+    <Content Include="Assets\vida.png" />
+    <Content Include="Assets\winButterfree.jpg" />
+    <Content Include="Assets\winFuecoco.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -218,6 +248,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="InfoButterfree.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="InfoFuecoco.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -235,6 +269,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PokeDexPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UCButterfree.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

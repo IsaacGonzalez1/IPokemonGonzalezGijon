@@ -25,6 +25,40 @@ namespace IPokemon
         public CapturaPokemon()
         {
             this.InitializeComponent();
+            BtnVolverCaptura.Visibility = Visibility.Collapsed;
+            this.ucFuegococoCapturar.verIconos(false);
+            this.ucButterfreeCapturar.verIconos(false);
+        }
+
+        private void capturarFuegococo_click(object sender, PointerRoutedEventArgs e)
+        {
+            uc1Fondo.Visibility= Visibility.Collapsed;
+            uc1Fondo2.Visibility= Visibility.Collapsed;
+            uc2Fondo.Visibility= Visibility.Collapsed;
+            uc2Fondo2.Visibility= Visibility.Collapsed;
+            ucFuegococoCapturar.Visibility = Visibility.Visible;
+            BtnVolverCaptura.Visibility = Visibility.Visible;
+        }
+
+        private void capturarButterfree_click(object sender, PointerRoutedEventArgs e)
+        {
+            uc1Fondo.Visibility = Visibility.Collapsed;
+            uc1Fondo2.Visibility = Visibility.Collapsed;
+            uc2Fondo.Visibility = Visibility.Collapsed;
+            uc2Fondo2.Visibility = Visibility.Collapsed;
+            ucButterfreeCapturar.Visibility = Visibility.Visible;
+            BtnVolverCaptura.Visibility = Visibility.Visible;
+        }
+
+        private void btnVolverCaptura_click(object sender, RoutedEventArgs e)
+        {
+            uc1Fondo.Visibility = Visibility.Visible;
+            uc1Fondo2.Visibility = Visibility.Visible;
+            uc2Fondo.Visibility = Visibility.Visible;
+            uc2Fondo2.Visibility = Visibility.Visible;
+            ucButterfreeCapturar.Visibility = Visibility.Collapsed;
+            ucFuegococoCapturar.Visibility = Visibility.Collapsed;
+            BtnVolverCaptura.Visibility = Visibility.Collapsed;
         }
     }
 }

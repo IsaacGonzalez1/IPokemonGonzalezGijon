@@ -20,21 +20,16 @@ namespace IPokemon
     /// <summary>
     /// Una página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
-    public sealed partial class PokeDexPage : Page
+    public sealed partial class InfoButterfree : Page
     {
-        public PokeDexPage()
+        public InfoButterfree()
         {
             this.InitializeComponent();
         }
 
-        private void BtnFuecoco_Click(object sender, RoutedEventArgs e)
+        private void BtnVolverPokedex_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(InfoFuecoco));
-        }
-
-        private void BtnButterfree_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(InfoButterfree));
+            Frame.Navigate(typeof(PokeDexPage));
         }
     }
 }

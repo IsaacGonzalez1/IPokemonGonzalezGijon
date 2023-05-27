@@ -11,10 +11,49 @@
     </Page.Background>
 
     <Grid>
-        <local:UCFuecoco HorizontalAlignment="Left" Margin="488,-59,0,0" VerticalAlignment="Top" Height="687" Width="976" RenderTransformOrigin="0.5,0.5">
+        <local:UCFuecoco x:Name="UCFuecocoCombate" HorizontalAlignment="Left" Margin="529,-66,0,0" VerticalAlignment="Top" Height="687" Width="976" RenderTransformOrigin="0.5,0.5">
             <local:UCFuecoco.RenderTransform>
                 <CompositeTransform ScaleX="0.8" ScaleY="0.8"/>
             </local:UCFuecoco.RenderTransform>
         </local:UCFuecoco>
+        <local:UCButterfree x:Name="UCButterfreeCombate" HorizontalAlignment="Left" Margin="-10,375,0,0" VerticalAlignment="Top" Height="620" Width="752" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <local:UCButterfree.RenderTransform>
+                <CompositeTransform SkewY="-0.272" TranslateY="-1.838"/>
+            </local:UCButterfree.RenderTransform>
+        </local:UCButterfree>
+        <Image x:Name="ganaFuecoco" HorizontalAlignment="Left" Height="404" Margin="172,569,0,0" VerticalAlignment="Top" Width="1321" Source="/Assets/winFuecoco.jpg" Visibility="Collapsed"/>
+        <Button x:Name="btnRepetirCombate" Content="Repetir Combate" Margin="924,709,0,0" VerticalAlignment="Top" Click="btnRepetirClick" Background="#FF90D4D8" FontWeight="Bold" BorderBrush="Black" Height="57" Width="342" FontSize="25"/>
+        <Image x:Name="ganaButterfree" HorizontalAlignment="Left" Height="548" Margin="118,258,0,0" VerticalAlignment="Top" Width="1276" Source="/Assets/winButterfree.jpg" Visibility="Collapsed" />
+
+        <Button x:Name="BtnAtaqueFuecoco" Content="Atacar"  Height="50" Width="133"  Foreground="Black" FontFamily="Consolas" RenderTransformOrigin="0.5,0.5" Margin="1218,175,0,0" VerticalAlignment="Top" Click="FuecoAtaqueClick">
+            <Button.RenderTransform>
+                <CompositeTransform ScaleX="2" ScaleY="2"/>
+            </Button.RenderTransform>
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/AtaquePokemon.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="BtnDefensaFuecoco" Content="Defensa"  Height="50" Width="133"  Foreground="Black" FontFamily="Consolas" RenderTransformOrigin="0.5,0.5" Margin="1221,323,0,0" VerticalAlignment="Top" Click="defensaFuecocoClick">
+            <Button.RenderTransform>
+                <CompositeTransform ScaleX="2" ScaleY="2"/>
+            </Button.RenderTransform>
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/AtaquePokemon.jpg"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="btnDefensaButterfree" Height="97" Width="125" Margin="609,511,0,0" VerticalAlignment="Top" Click="ataqueButterfreeClick">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/lucha.png"/>
+            </Button.Background>
+        </Button>
+        
+        <Button x:Name="btnAtaqueButterfree" Height="97" Width="125" Margin="-7,501,0,0" VerticalAlignment="Top" Click="defensaButterfreeClick">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/mariposa.png"/>
+            </Button.Background>
+        </Button>
+
+
     </Grid>
 </Page>

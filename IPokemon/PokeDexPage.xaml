@@ -35,7 +35,7 @@
                 <CompositeTransform ScaleX="1.5" ScaleY="1.5"/>
             </Image.RenderTransform>
         </Image>
-        <Button x:Name="BtnButterfree" Margin="32,0,0,0" Grid.Row="3" Height="138" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Stretch">
+        <Button x:Name="BtnButterfree" Margin="32,0,0,0" Grid.Row="3" Height="138" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Click="BtnButterfree_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/barra pokedex.png"/>
             </Button.Background>

@@ -11,6 +11,7 @@
     </Page.Background>
 
     <Grid>
+
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
@@ -56,6 +57,7 @@ FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" BorderBrush="{x:Null}
                 </Grid>
             </SplitView.Pane>
         </SplitView>
+
         <Grid x:Name="BtnMenu">
             <Border>
 
@@ -65,6 +67,7 @@ FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" BorderBrush="{x:Null}
                 </Button>
             </Border>
         </Grid>
+
         <Frame x:Name="fmMain" Grid.Column="1" Grid.Row="1">
             <Image HorizontalAlignment="Center" Height="176" Margin="0,132,0,0" VerticalAlignment="Top" Width="450" Source="/Assets/IPOkemonTtl.png" RenderTransformOrigin="0.5,0.5">
                 <Image.RenderTransform>

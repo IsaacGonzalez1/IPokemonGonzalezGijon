@@ -1,0 +1,165 @@
+﻿<Page
+    x:Class="IPokemon.InfoButterfree"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IPokemon"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FF1475A0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="229*"/>
+            <ColumnDefinition Width="146*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140*"/>
+            <RowDefinition Height="53*"/>
+            <RowDefinition Height="119*"/>
+            <RowDefinition Height="86*"/>
+            <RowDefinition Height="87*"/>
+            <RowDefinition Height="86*"/>
+            <RowDefinition Height="87*"/>
+            <RowDefinition Height="86*"/>
+            <RowDefinition Height="121*"/>
+            <RowDefinition Height="134*"/>
+        </Grid.RowDefinitions>
+
+        <Image HorizontalAlignment="Left" Height="100" Margin="596,79,0,0" VerticalAlignment="Top" Width="100" Grid.RowSpan="3" Grid.Row="4"/>
+        <Rectangle Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="139" Margin="6,120,0,0" Grid.RowSpan="2" Grid.Row="8" Stroke="Black" VerticalAlignment="Top" Width="1493" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <CompositeTransform Rotation="180"/>
+            </Rectangle.RenderTransform>
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF4D77DD" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+            <Rectangle.FocusVisualSecondaryBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.FocusVisualSecondaryBrush>
+        </Rectangle>
+
+        <Rectangle Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="187" Margin="8,4,0,0" Stroke="Black" VerticalAlignment="Top" Width="1493" Grid.RowSpan="2">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF4D77DD" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+            <Rectangle.FocusVisualSecondaryBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.FocusVisualSecondaryBrush>
+        </Rectangle>
+        <Image HorizontalAlignment="Left" Height="298" Margin="740,42,0,0" Grid.RowSpan="4" Grid.Row="3" VerticalAlignment="Top" Width="264" Source="/Assets/fondoInfoButterfree.png" Grid.ColumnSpan="2"/>
+        <local:UCButterfree HorizontalAlignment="Center" Margin="0,12,0,0" VerticalAlignment="Top" Height="847" Width="914" Grid.RowSpan="9"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Grid.Row="1" TextWrapping="Wrap" Text="Altura:" VerticalAlignment="Top" Foreground="White" FontSize="28" Height="49" Width="122" FontFamily="Unispace" TextDecorations="Underline" Margin="0,10,0,0" FontStyle="Normal" Grid.RowSpan="2"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Grid.Row="2" TextWrapping="Wrap" Text="Peso:" VerticalAlignment="Top" Foreground="White" FontSize="28" Height="49" Width="220" FontFamily="Unispace" Margin="0,37,0,0" TextDecorations="Underline"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Grid.Row="3" TextWrapping="Wrap" Text="Sexo: " VerticalAlignment="Top" Foreground="White" FontSize="28" Height="53" Width="114" FontFamily="Unispace" Margin="0,31,0,0" TextDecorations="Underline"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Grid.Row="4" TextWrapping="Wrap" Text="Categoría:" VerticalAlignment="Top" Foreground="White" FontSize="28" Height="53" Width="187" FontFamily="Unispace" Margin="0,27,0,0" TextDecorations="Underline"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Grid.Row="5" TextWrapping="Wrap" Text="Habilidad:" VerticalAlignment="Top" Foreground="White" FontSize="28" Height="53" Width="190" FontFamily="Unispace" Margin="0,26,0,0" TextDecorations="Underline"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Grid.Row="6" TextWrapping="Wrap" Text="Debilidad:" VerticalAlignment="Top" Foreground="White" FontSize="28" Height="66" Width="481" FontFamily="Unispace" Margin="0,20,0,0" TextDecorations="Underline"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Grid.Row="7" TextWrapping="Wrap" Text="Evolución:" VerticalAlignment="Top" Foreground="White" FontSize="28" Height="53" Width="428" FontFamily="Unispace" Margin="0,26,0,0" TextDecorations="Underline" FontStyle="Normal"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="34,47,0,0" TextWrapping="Wrap" Text="Tipo:" VerticalAlignment="Top" FontSize="24" FontFamily="Unispace" Height="29" Width="73" FocusVisualPrimaryBrush="#FFF7EEEE" Foreground="#FFF3EAEA"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Bicho" VerticalAlignment="Top" Height="46" Width="143" TextAlignment="Center" FontFamily="Unispace" FontSize="20" Margin="128,38,0,0" Background="#6645D432"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="209,27,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Hembra" VerticalAlignment="Top" Background="#66ED0956" SelectionHighlightColor="#FF8513E3" FontSize="22" Width="197" TextAlignment="Center" Height="42" FontFamily="Unispace"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="178,14,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Hielo" VerticalAlignment="Top" FocusVisualPrimaryBrush="#FF3BB7A3" SelectionHighlightColor="#FF00EDFF" FontSize="22" Width="102" TextAlignment="Center" FontFamily="Unispace" Height="43">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0A89FF"/>
+                    <GradientStop Color="#FF41C6FF" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="304,14,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Fuego" VerticalAlignment="Top" FontSize="22" TextAlignment="Center" FontFamily="Unispace" Height="43">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF9E6511"/>
+                    <GradientStop Color="#FFD03A10" Offset="0.973"/>
+                    <GradientStop Color="#FFEEC313" Offset="0.015"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="427,14,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Roca" VerticalAlignment="Top" TextAlignment="Center" FontSize="22" RenderTransformOrigin="0.465,0.511" Width="102" FontFamily="Unispace" Height="43">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFB19037"/>
+                    <GradientStop Color="#FF584208" Offset="0.985"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="208,8,0,0" Grid.Row="1" TextWrapping="Wrap" Text="1,1 m" VerticalAlignment="Top" FontSize="22" TextAlignment="Center" FontFamily="Unispace" Width="197">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFDA6E00"/>
+                    <GradientStop Color="#FF2942A7" Offset="1"/>
+                    <GradientStop Color="#FF2697B1" Offset="0.228"/>
+                    <GradientStop Color="#FF0FCA96" Offset="0"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Volador" VerticalAlignment="Top" Height="46" Width="136" TextAlignment="Center" FontFamily="Unispace" FontSize="20" Margin="324,39,0,0" Background="#663A8DD5"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="207,37,0,0" Grid.Row="2" TextWrapping="Wrap" Text="32,0 kg" VerticalAlignment="Top" FontSize="22" TextAlignment="Center" FontFamily="Unispace" Width="197">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFDA6E00"/>
+                    <GradientStop Color="#FF2942A7" Offset="1"/>
+                    <GradientStop Color="#FF2697B1" Offset="0.228"/>
+                    <GradientStop Color="#FF0FCA96" Offset="0"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="209,15,0,0" Grid.Row="4" TextWrapping="Wrap" Text="Mariposa" VerticalAlignment="Top" FontSize="22" TextAlignment="Center" FontFamily="Unispace" Width="197">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFDA6E00"/>
+                    <GradientStop Color="#FF2942A7" Offset="1"/>
+                    <GradientStop Color="#FF2697B1" Offset="0.228"/>
+                    <GradientStop Color="#FF0FCA96" Offset="0"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="209,18,0,0" Grid.Row="5" TextWrapping="Wrap" Text="Ojo Compuesto" VerticalAlignment="Top" FontSize="22" TextAlignment="Center" FontFamily="Unispace" Width="197">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFDA6E00"/>
+                    <GradientStop Color="#FF2942A7" Offset="1"/>
+                    <GradientStop Color="#FF2697B1" Offset="0.228"/>
+                    <GradientStop Color="#FF0FCA96" Offset="0"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <Image Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="35,82,0,0" Grid.RowSpan="2" Grid.Row="8" VerticalAlignment="Top" Width="100" Source="/Assets/evolucion1.png"/>
+        <Image Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="244,115,0,0" Grid.RowSpan="2" Grid.Row="8" VerticalAlignment="Top" Width="100" Source="/Assets/Evolucion_2.png"/>
+        <Image Height="100" Width="100"/>
+        <Image Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="422,55,0,0" Grid.RowSpan="2" Grid.Row="8" VerticalAlignment="Top" Width="100" Source="/Assets/evolucion3.png"/>
+        <Image Grid.Column="1" HorizontalAlignment="Left" Height="45" Margin="163,112,0,0" Grid.Row="8" VerticalAlignment="Top" Width="59" Grid.RowSpan="2" Source="/Assets/flecha.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="-217.381"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image Grid.Column="1" HorizontalAlignment="Left" Height="45" Margin="351,0,0,0" Grid.Row="9" VerticalAlignment="Top" Width="59" Source="/Assets/flecha.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="109.49"/>
+            </Image.RenderTransform>
+        </Image>
+
+        <Button x:Name="BtnVolverPokedex" Content="Volver a la Pokedex" Margin="29,0,0,0" Grid.Row="9" FontSize="29" FontFamily="Unispace" Click="BtnVolverPokedex_Click" >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF29A761"/>
+                    <GradientStop Color="#FF806BFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Page>
