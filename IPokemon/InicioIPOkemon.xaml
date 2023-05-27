@@ -12,8 +12,12 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="119*"/>
-            <ColumnDefinition Width="488*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="26*"/>
+            <ColumnDefinition Width="31*"/>
+            <ColumnDefinition Width="26*"/>
+            <ColumnDefinition Width="26*"/>
+            <ColumnDefinition Width="483*"/>
             <ColumnDefinition Width="143*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -21,10 +25,22 @@
             <RowDefinition Height="179*"/>
             <RowDefinition Height="32*"/>
             <RowDefinition Height="106*"/>
-            <RowDefinition Height="183*"/>
+            <RowDefinition Height="82*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="76*"/>
         </Grid.RowDefinitions>
-        <Image HorizontalAlignment="Center" Height="414" VerticalAlignment="Top" Width="968" Source="/Assets/IPOkemonTtl.png" Margin="0,10,0,0" Grid.RowSpan="4" Grid.Column="1"/>
-        <Image HorizontalAlignment="Center" Height="396" Margin="0,357,0,0" Grid.Row="1" VerticalAlignment="Top" Width="976" Source="/Assets/Panel Nombre IPOkedex INICIO.png" Grid.RowSpan="4" Grid.Column="1"/>
+        <Image x:Name="IPOkemonttl" HorizontalAlignment="Center" Height="414" VerticalAlignment="Top" Width="968" Source="/Assets/IPOkemonTtl.png" Margin="0,10,0,0" Grid.RowSpan="4" Grid.Column="5"/>
+        <Image x:Name="InicioInfo" HorizontalAlignment="Center" Height="396" Margin="0,357,0,0" Grid.Row="1" VerticalAlignment="Top" Width="976" Source="/Assets/Panel Nombre IPOkedex INICIO.png" Grid.RowSpan="4" Grid.Column="5"/>
+        <Button x:Name="BtnInicioEspañol" Content="" Grid.Row="5" Grid.Column="1" Height="50" Width="52" HorizontalAlignment="Center" Click="BtnInicioEspañol_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/IdiomaEspaña.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="BtnInicioIngles" Grid.Column="3" Content="" Grid.Row="5" Height="50" Width="52" HorizontalAlignment="Center" Click="BtnInicioIngles_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/IdiomaIngles.png"/>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Page>

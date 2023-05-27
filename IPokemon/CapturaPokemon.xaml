@@ -25,21 +25,17 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="btnCapButterfree" Content="Butterfree" Height="138" Margin="901,658,0,0" VerticalAlignment="Top" Width="374" FontFamily="MS Gothic" FontSize="40" FontWeight="Bold" Click="btnCapturarButterfree_Click">
+        <Button x:Name="btnCapButterfree" Content="Butterfree" Height="138" Margin="901,658,0,0" VerticalAlignment="Top" Width="374" FontFamily="Unispace" FontSize="40" FontWeight="Bold" Click="btnCapturarButterfree_Click" Foreground="#FF0C0000">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/Panel Nombre IPOkedex.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnCapFuecoco" Content="Fuecoco" Height="138" Margin="215,658,0,0" VerticalAlignment="Top" Width="374" FontFamily="MS Gothic" FontSize="40" FontWeight="Bold" Click="btnCapturarFuecoco_Click">
+        <Button x:Name="btnCapFuecoco" Content="Fuecoco" Height="138" Margin="215,658,0,0" VerticalAlignment="Top" Width="374" FontFamily="Unispace" FontSize="40" FontWeight="Bold" Click="btnCapturarFuecoco_Click" Foreground="Black">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/Panel Nombre IPOkedex.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnCapPregunta" Content="¿Qué Pokemón desea capturar?" Height="238" Margin="255,232,0,0" VerticalAlignment="Top" Width="984" FontFamily="MS Gothic" FontSize="40" FontWeight="Bold">
-            <Button.Background>
-                <ImageBrush ImageSource="/Assets/Panel Nombre IPOkedex.png"/>
-            </Button.Background>
-        </Button>
+        <Image x:Name="ImgPregunta" HorizontalAlignment="Center" Height="262" Margin="0,318,0,0" VerticalAlignment="Top" Width="890" Source="/Assets/Panel Nombre Captura.png"/>
 
     </Grid>
 </Page>

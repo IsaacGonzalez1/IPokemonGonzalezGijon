@@ -21,10 +21,8 @@ namespace IPokemon
     public sealed partial class UCButterfree : UserControl
     {
         DispatcherTimer dtTime;
-        DispatcherTimer dtRelojVida;
+        
         DispatcherTimer dtRelojEnergia;
-        static double valor = 0.0;
-        static double vida_actual = 100.0;
         public UCButterfree()
         {
             this.InitializeComponent();
@@ -150,19 +148,15 @@ namespace IPokemon
         }
         private void increaseHealth(object sender, object e)
         {
-            this.pbVida.Value += 0.2;
-            if (pbVida.Value >= 100)
+            this.pbVida.Value += 2;
+            if (pbVida.Value == 100)
             {
                 this.dtTime.Stop();
                 this.imgVida.Opacity = 1;
             }
-            if (pbVida.Value >= 5)
-            {
-                ojosVivos();
-                pbVida.Foreground = new SolidColorBrush(Windows.UI.Colors.Red);
-            }
+           
         }
-        private void ojosVivos()
+        public void ojosVivos()
         {
             pupilaD.Visibility = Visibility.Visible;
             pupilaI.Visibility = Visibility.Visible;
@@ -179,12 +173,12 @@ namespace IPokemon
             dtTime.Tick += increaseEnergy;
             dtTime.Start();
             this.imgPotionEnergia.Opacity = 0.5;
-            pbVida.Foreground = new SolidColorBrush(Windows.UI.Colors.Pink);
+            
         }
         private void increaseEnergy(object sender, object e)
         {
-            this.pbEnergia.Value += 0.2;
-            if (pbEnergia.Value >= 100)
+            this.pbEnergia.Value += 2;
+            if (pbEnergia.Value == 100)
             {
                 this.dtTime.Stop();
                 this.imgEnergia.Opacity = 1;
@@ -235,7 +229,7 @@ namespace IPokemon
             Storyboard sbojoI = (Storyboard)this.pupilaI.Resources["StbPupilaIRoja"];
             sbojoI.Begin();
 
-            bajarVida();
+            
         }
 
         private void atacarpinchar(object sender, PointerRoutedEventArgs e)
@@ -259,51 +253,35 @@ namespace IPokemon
 
         private void bajarEnergia()
         {
-            dtRelojEnergia = new DispatcherTimer();
-            dtRelojEnergia.Interval = TimeSpan.FromMilliseconds(100);
-            dtRelojEnergia.Tick += reducirBarraEnergia;
-            dtRelojEnergia.Start();
+            reducirBarraEnergia();
         }
 
-        private void reducirBarraEnergia(object sender, object e)
+        private void reducirBarraEnergia()
         {
-            this.pbEnergia.Value -= 0.1;
-            if (pbEnergia.Value == 0)
-            {
-                dtRelojEnergia.Stop();
-            }
+            this.pbEnergia.Value -= 10;
+            
             if (pbEnergia.Value <= 5)
             {
                 pbEnergia.Foreground = new SolidColorBrush(Windows.UI.Colors.Gray);
                 sudor.Visibility = Visibility.Visible;
             }
         }
-        private void bajarVida()
+        public void bajarVida()
         {
-            dtRelojVida = new DispatcherTimer();
-            dtRelojVida.Interval = TimeSpan.FromMilliseconds(100);
-            dtRelojVida.Tick += reducirBarraVida;
-            dtRelojVida.Start();
+            reducirBarraVida();
         }
 
-        private void reducirBarraVida(object sender, object e)
+        void reducirBarraVida()
         {
-            this.pbVida.Value -= 0.1;
-            if (pbVida.Value == 0)
-            {
-                dtRelojVida.Stop();
-            }
-            if (pbVida.Value <= 5)
-            {
-                pbVida.Foreground = new SolidColorBrush(Windows.UI.Colors.Gray);
-            }
+            pbVida.Value -= 10;
+           
             if (pbVida.Value == 0)
             {
                 ojosMuertos();
             }
         }
 
-        private void ojosMuertos()
+        public void ojosMuertos()
         {
             pupilaD.Visibility = Visibility.Collapsed;
             pupilaI.Visibility = Visibility.Collapsed;

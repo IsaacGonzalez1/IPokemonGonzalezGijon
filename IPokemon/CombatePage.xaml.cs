@@ -37,6 +37,7 @@ namespace IPokemon
 
             this.UCButterfreeCombate.verBolaPokemon(false);
             this.UCFuecocoCombate.verBolaPokemon(false);
+            this.UCFuecocoCombate.ocultarRecibirDaño(false);
 
         }
 
@@ -47,8 +48,8 @@ namespace IPokemon
             if (this.UCFuecocoCombate.MyVida <= 0.0)
             {
                 UCFuecocoCombate.verIconos(false);
-                await Task.Delay(TimeSpan.FromSeconds(5));
-                ganaFuecoco.Visibility= Visibility.Collapsed;
+                await Task.Delay(TimeSpan.FromSeconds(2));
+                ganaButterfree.Visibility = Visibility.Visible;
                 btnRepetirCombate.Visibility = Visibility.Visible;
                 
             }
@@ -62,17 +63,17 @@ namespace IPokemon
             {
                 UCButterfreeCombate.verIconos(false);
                 await Task.Delay(TimeSpan.FromSeconds(5));
-                ganaButterfree.Visibility = Visibility.Visible;
+                ganaFuecoco.Visibility = Visibility.Visible;
                 btnRepetirCombate.Visibility = Visibility.Visible;
-                UCFuecocoCombate.celebrarVictoria();
+                UCButterfreeCombate.ojosVivos();
 
             }
         }
 
-        private void FuecoAtaqueClick(object sender, RoutedEventArgs e)
+        private void FuecoAtaquePlacajeClick(object sender, RoutedEventArgs e)
         {
-            UCFuecocoCombate.activarAtaque();
-            UCButterfreeCombate.recibirDaño();
+            UCFuecocoCombate.placaje();
+            UCButterfreeCombate.bajarVida();
 
             if (this.UCButterfreeCombate.MyVida <= 0.0)
             {
@@ -88,7 +89,7 @@ namespace IPokemon
         private void ataqueButterfreeClick(object sender, RoutedEventArgs e)
         {
             UCButterfreeCombate.activarAtaque();
-            UCFuecocoCombate.recibirDaño();
+            UCFuecocoCombate.recibirdaño();
 
             if (this.UCFuecocoCombate.MyVida <= 0.0)
             {
@@ -100,14 +101,12 @@ namespace IPokemon
             }
         }
 
-        private void defensaFuecocoClick(object sender, RoutedEventArgs e)
-        {
-            UCFuecocoCombate.activarDefensa();
-        }
+        
 
         private void defensaButterfreeClick(object sender, RoutedEventArgs e)
         {
             UCButterfreeCombate.activarDefensa();
+            
         }
 
         private void btnRepetirClick(object sender, RoutedEventArgs e)
@@ -117,6 +116,54 @@ namespace IPokemon
             btnRepetirCombate.Visibility = Visibility.Collapsed;
             this.UCFuecocoCombate.MyVida = 100.0;
             this.UCButterfreeCombate.MyVida = 100.0;
+            
+        }
+
+       
+
+        private void FuecoAtaqueAscuasClick(object sender, RoutedEventArgs e)
+        {
+            UCFuecocoCombate.ascuas();
+            UCButterfreeCombate.bajarVida();
+
+            if (this.UCButterfreeCombate.MyVida <= 0.0)
+            {
+                winFuecoco();
+            }
+            if (this.UCButterfreeCombate.MyEnergy <= 0.0)
+            {
+                winFuecoco();
+            }
+        }
+
+        private void FuecoAtaqueDanzaMaracaClick(object sender, RoutedEventArgs e)
+        {
+            UCFuecocoCombate.danza();
+            UCButterfreeCombate.bajarVida();
+
+            if (this.UCButterfreeCombate.MyVida <= 0.0)
+            {
+                winFuecoco();
+            }
+            if (this.UCButterfreeCombate.MyEnergy <= 0.0)
+            {
+                winFuecoco();
+            }
+        }
+
+        private void FuecoAtaqueMordiscoClick(object sender, RoutedEventArgs e)
+        {
+            UCFuecocoCombate.mordisco();
+            UCButterfreeCombate.bajarVida();
+
+            if (this.UCButterfreeCombate.MyVida <= 0.0)
+            {
+                winFuecoco();
+            }
+            if (this.UCButterfreeCombate.MyEnergy <= 0.0)
+            {
+                winFuecoco();
+            }
         }
     }
 }

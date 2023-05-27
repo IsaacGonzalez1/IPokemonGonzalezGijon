@@ -300,16 +300,8 @@
         </Grid.ColumnDefinitions>
 
 
-        <ProgressBar x:Name="pbVida" Grid.Column="1" Width="1200" VerticalAlignment="Stretch" Margin="2,2,2,2" Foreground="#FFE93E39" Value="23">
-            <ProgressBar.Background>
-                <SolidColorBrush Color="#FFE93975" Opacity="0.3"/>
-            </ProgressBar.Background>
-        </ProgressBar>
-        <ProgressBar x:Name="pbEnergia" Grid.Column="1" Width="1200" VerticalAlignment="Stretch" Margin="2,2,2,2" Foreground="#FFE9E739" Value="10" Grid.Row="1">
-            <ProgressBar.Background>
-                <SolidColorBrush Color="#FFE9E739" Opacity="0.3"/>
-            </ProgressBar.Background>
-        </ProgressBar>
+        <ProgressBar x:Name="pbVida" Grid.Column="1" Margin="2,4,0,3" VerticalAlignment="Stretch" Foreground="#FFF2362A" Background="#33CA3232" Value="39.5"/>
+        <ProgressBar x:Name="pbEnergia" Grid.Column="1" Margin="1,4,1,3" VerticalAlignment="Stretch" Foreground="#FFEFB61F" Background="#33F0F164" Value="75" Grid.Row="1"/>
         <Image x:Name="imgPotionVida" Grid.Column="2"  PointerReleased="imgPotionVida_PointerReleased" Source="/Assets/PocionVida2.png" Margin="2,2,2,3"/>
         <Image x:Name="imgPotionEnergia" Grid.Column="2"  Grid.Row="1" PointerReleased="imgPotionEnergia_PointerReleased" Source="/Assets/pocionEnergia.png" />
         <Image x:Name="imgVida" Source="/Assets/vida.png" />

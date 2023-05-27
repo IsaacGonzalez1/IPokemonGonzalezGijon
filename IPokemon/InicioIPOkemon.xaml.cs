@@ -11,6 +11,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=234238
@@ -22,9 +23,21 @@ namespace IPokemon
     /// </summary>
     public sealed partial class InicioIPOkemon : Page
     {
+        private BitmapImage IdiomaEspInicio = new BitmapImage(new Uri("ms-appx:///Assets/Panel Nombre IPOkedex INICIO.png"));
+        private BitmapImage IdiomaInglesInicio = new BitmapImage(new Uri("ms-appx:///Assets/Panel Inicio Inglés.png"));
         public InicioIPOkemon()
         {
             this.InitializeComponent();
+        }
+
+        private void BtnInicioEspañol_Click(object sender, RoutedEventArgs e)
+        {
+            InicioInfo.Source = IdiomaEspInicio;
+        }
+
+        private void BtnInicioIngles_Click(object sender, RoutedEventArgs e)
+        {
+            InicioInfo.Source = IdiomaInglesInicio;
         }
     }
 }

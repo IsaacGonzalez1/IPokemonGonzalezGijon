@@ -6,9 +6,38 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-    <Page.Background>
-        <ImageBrush ImageSource="/Assets/Manual IPOkemon.png"/>
-    </Page.Background>
 
-    <Grid/>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="528*"/>
+            <ColumnDefinition Width="37*"/>
+            <ColumnDefinition Width="54*"/>
+            <ColumnDefinition Width="37*"/>
+            <ColumnDefinition Width="97*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="456*"/>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+        <Image x:Name="ManualJuego" HorizontalAlignment="Left" Height="1000" VerticalAlignment="Center" Width="1500" FocusVisualPrimaryBrush="{x:Null}" Source="/Assets/Manual IPOkemon.png" Stretch="Fill" Grid.RowSpan="4" Grid.ColumnSpan="5"/>
+        <Button x:Name="BtnEspañol" Content="" Height="58" Width="68" Foreground="#FF130101" FontSize="16" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" Click="BtnEspañol_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/IdiomaEspaña.png"/>
+            </Button.Background>
+            <Button.FocusVisualPrimaryBrush>
+                <ImageBrush/>
+            </Button.FocusVisualPrimaryBrush>
+            <Button.FocusVisualSecondaryBrush>
+                <ImageBrush/>
+            </Button.FocusVisualSecondaryBrush>
+        </Button>
+        <Button x:Name="BtnInglés" Grid.Column="3" Content="" Grid.Row="2" Height="58" Width="73" HorizontalAlignment="Center" Click="BtnInglés_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/IdiomaIngles.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
 </Page>

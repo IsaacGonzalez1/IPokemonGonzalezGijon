@@ -35,7 +35,7 @@ namespace IPokemon
         {
             btnCapButterfree.Visibility = Visibility.Visible;
             btnCapFuecoco.Visibility = Visibility.Visible;
-            btnCapPregunta.Visibility = Visibility.Visible;
+            ImgPregunta.Visibility = Visibility.Visible;
             ucButterfreeCapturar.Visibility = Visibility.Collapsed;
             ucFuegococoCapturar.Visibility = Visibility.Collapsed;
             BtnVolverCaptura.Visibility = Visibility.Collapsed;
@@ -45,7 +45,7 @@ namespace IPokemon
         {
             btnCapButterfree.Visibility = Visibility.Collapsed;
             btnCapFuecoco.Visibility = Visibility.Collapsed;
-            btnCapPregunta.Visibility = Visibility.Collapsed;
+            ImgPregunta.Visibility = Visibility.Collapsed;
             ucButterfreeCapturar.Visibility = Visibility.Visible;
             BtnVolverCaptura.Visibility = Visibility.Visible;
         }
@@ -54,7 +54,7 @@ namespace IPokemon
         {
             btnCapButterfree.Visibility = Visibility.Collapsed;
             btnCapFuecoco.Visibility = Visibility.Collapsed;
-            btnCapPregunta.Visibility = Visibility.Collapsed;
+            ImgPregunta.Visibility = Visibility.Collapsed;
             ucFuegococoCapturar.Visibility = Visibility.Visible;
             BtnVolverCaptura.Visibility = Visibility.Visible;
         }
