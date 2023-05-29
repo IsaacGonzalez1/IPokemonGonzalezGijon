@@ -27,22 +27,23 @@
                     <SymbolIcon x:Name="SymPokedex" Grid.Row="1" Margin="4" Symbol="Pictures"></SymbolIcon>
                     <SymbolIcon x:Name="SymCombate" Grid.Row="2" Margin="4" Symbol="People"></SymbolIcon>
                     <SymbolIcon x:Name="SymCaptura" Grid.Row="3" Margin="4" Symbol="Camera"></SymbolIcon>
-                    <SymbolIcon x:Name="SymManual" Grid.Row="4" Margin="4,1,4,0" Symbol="PreviewLink"></SymbolIcon>
+                    <SymbolIcon x:Name="SymManual" Grid.Row="4" Margin="4" Symbol="PreviewLink"></SymbolIcon>
 
                     <Button x:Name="BtnInicio" Grid.Column="1"  Content="Inicio" Height="50"
-                        Background="{x:Null}" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left"
-                        BorderBrush="{x:Null}"  Margin="0,0,25,0" Click="BtnInicio_Click_1" FontFamily="Unispace"/>
-
+Background="{x:Null}" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left"
+BorderBrush="{x:Null}" Click="BtnInicio_Click_1" Margin="0,0,25,0"/>
                     <Button x:Name="BtnPokedex" Grid.Row="1" Grid.Column="1" Content="PokeDex" Height="50" Background="{x:Null}"
-FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" BorderBrush="{x:Null}" 
-Margin="0,0,25,0" Click="BtnPokedex_Click_1" FontFamily="Unispace"/>
+FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" BorderBrush="{x:Null}" Click="BtnPokedex_Click_1"
+Margin="0,0,25,0"/>
                     <Button x:Name="BtnCombate" Grid.Row="2" Grid.Column="1" Content="Combate" Height="50" Background="{x:Null}"
-FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" BorderBrush="{x:Null}" 
-Margin="0,0,25,0" Click="BtnCombate_Click_1" FontFamily="Unispace"/>
-                    <Button x:Name="BtnManual" Grid.Row="4" Grid.Column="1" Content="Manual de Juego" Height="50" Background="{x:Null}"
-FontSize="20" FontWeight="Bold" BorderBrush="{x:Null}" FontFamily="Unispace" Width="206" Click="BtnManual_Click"/>
+FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" BorderBrush="{x:Null}" Click="BtnCombate_Click_1"
+Margin="0,0,25,0"/>
                     <Button x:Name="BtnCaptura" Grid.Row="3" Grid.Column="1" Content="Captura" Height="50" Background="{x:Null}"
-FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" BorderBrush="{x:Null}" Margin="0,0,25,0" Click="BtnCaptura_Click" FontFamily="Unispace"/>
+FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" BorderBrush="{x:Null}" Margin="0,0,25,0" Click="BtnCaptura_Click"/>
+
+                    <Button x:Name="BtnManual" Grid.Row="4" Grid.Column="1" Content="Manual de Juego" Height="50" Background="{x:Null}"
+FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" BorderBrush="{x:Null}" Margin="0,0,25,0" Click="BtnManual_Click"/>
+                    
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"></RowDefinition>
                         <RowDefinition Height="Auto"></RowDefinition>

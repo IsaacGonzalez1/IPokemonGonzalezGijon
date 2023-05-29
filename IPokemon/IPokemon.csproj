@@ -166,8 +166,10 @@
     <Content Include="Assets\bolapokemon.png" />
     <Content Include="Assets\botonpokeball.png" />
     <Content Include="Assets\butterfree pokedex gif.gif" />
+    <Content Include="Assets\butterfree.png" />
     <Content Include="Assets\CapturandoPokeball.png" />
     <Content Include="Assets\CapturaPokeball.png" />
+    <Content Include="Assets\chincheta.png" />
     <Content Include="Assets\corazonPokemon.png" />
     <Content Include="Assets\corazonVida.png" />
     <Content Include="Assets\cuadradoBlanco.png" />
@@ -186,12 +188,21 @@
     <Content Include="Assets\fondoInfoButterfree.png" />
     <Content Include="Assets\fondoPokemon.jpg" />
     <Content Include="Assets\fuecoco gif.gif" />
+    <Content Include="Assets\Fuecoco.png" />
     <Content Include="Assets\gotamuerto.png" />
     <Content Include="Assets\gota_sudor.png" />
-    <Content Include="Assets\imagenIpokemon.png" />
+    <Content Include="Assets\icons8-españa-96.png" />
+    <Content Include="Assets\icons8-gran-bretaña-96.png" />
+    <Content Include="Assets\imagenIpokemon.scale-400.png" />
+    <Content Include="Assets\imagen_iniciar.jpg" />
     <Content Include="Assets\imgjugadorPersona.png" />
     <Content Include="Assets\imgjugadorRobot.png" />
     <Content Include="Assets\IPOkemonTtl.png" />
+    <Content Include="Assets\LargeTile.scale-100.png" />
+    <Content Include="Assets\LargeTile.scale-125.png" />
+    <Content Include="Assets\LargeTile.scale-150.png" />
+    <Content Include="Assets\LargeTile.scale-200.png" />
+    <Content Include="Assets\LargeTile.scale-400.png" />
     <Content Include="Assets\letraButterfree.png" />
     <Content Include="Assets\letraFuecoco.png" />
     <Content Include="Assets\lucha.png" />
@@ -212,18 +223,58 @@
     <Content Include="Assets\pokedex titulo.png" />
     <Content Include="Assets\pokemon.png" />
     <Content Include="Assets\pum.png" />
+    <Content Include="Assets\SmallTile.scale-100.png" />
+    <Content Include="Assets\SmallTile.scale-125.png" />
+    <Content Include="Assets\SmallTile.scale-150.png" />
+    <Content Include="Assets\SmallTile.scale-200.png" />
+    <Content Include="Assets\SmallTile.scale-400.png" />
     <Content Include="Assets\sombrero fuecoco.jpg" />
     <Content Include="Assets\splash.png" />
+    <Content Include="Assets\SplashScreen.scale-100.png" />
+    <Content Include="Assets\SplashScreen.scale-125.png" />
+    <Content Include="Assets\SplashScreen.scale-150.png" />
+    <Content Include="Assets\SplashScreen.scale-400.png" />
     <Content Include="Assets\sprit 3 mordisco.png" />
     <Content Include="Assets\sprite 1 mordisco.png" />
     <Content Include="Assets\sprite 2 mordisco.png" />
     <Content Include="Assets\sprite_fuego_1.png" />
     <Content Include="Assets\sprite_fuego_2.png" />
     <Content Include="Assets\sprite_fuego_3.png" />
+    <Content Include="Assets\Square150x150Logo.scale-100.png" />
+    <Content Include="Assets\Square150x150Logo.scale-125.png" />
+    <Content Include="Assets\Square150x150Logo.scale-150.png" />
+    <Content Include="Assets\Square150x150Logo.scale-400.png" />
+    <Content Include="Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png" />
+    <Content Include="Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png" />
+    <Content Include="Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png" />
+    <Content Include="Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png" />
+    <Content Include="Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png" />
+    <Content Include="Assets\Square44x44Logo.altform-unplated_targetsize-16.png" />
+    <Content Include="Assets\Square44x44Logo.altform-unplated_targetsize-256.png" />
+    <Content Include="Assets\Square44x44Logo.altform-unplated_targetsize-32.png" />
+    <Content Include="Assets\Square44x44Logo.altform-unplated_targetsize-48.png" />
+    <Content Include="Assets\Square44x44Logo.scale-100.png" />
+    <Content Include="Assets\Square44x44Logo.scale-125.png" />
+    <Content Include="Assets\Square44x44Logo.scale-150.png" />
+    <Content Include="Assets\Square44x44Logo.scale-400.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-16.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-256.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-32.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-48.png" />
     <Content Include="Assets\staminaPokemon.jpg" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\StoreLogo.scale-125.png" />
+    <Content Include="Assets\StoreLogo.scale-150.png" />
+    <Content Include="Assets\StoreLogo.scale-200.png" />
+    <Content Include="Assets\StoreLogo.scale-400.png" />
     <Content Include="Assets\textoCaptura.png" />
     <Content Include="Assets\tirita.png" />
     <Content Include="Assets\vida.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-100.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-125.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-150.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-400.png" />
     <Content Include="Assets\winButterfree.jpg" />
     <Content Include="Assets\winFuecoco.jpg" />
     <Content Include="Properties\Default.rd.xml" />
@@ -232,7 +283,6 @@
     <Content Include="Assets\Square150x150Logo.scale-200.png" />
     <Content Include="Assets\Square44x44Logo.scale-200.png" />
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
-    <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
   </ItemGroup>
   <ItemGroup>
@@ -284,6 +334,12 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.14</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.Notifications">
+      <Version>7.1.3</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.UI.Xaml">
+      <Version>2.8.4</Version>
     </PackageReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

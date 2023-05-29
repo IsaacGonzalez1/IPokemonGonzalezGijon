@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.UI.ViewManagement;
+using Microsoft.Toolkit.Uwp.Notifications;
 using Windows.UI.Notifications;
 using Windows.UI.StartScreen;
 
@@ -39,6 +40,7 @@ namespace IPokemon
             ApplicationView.GetForCurrentView().SetPreferredMinSize (new Size(320, 320));
             ApplicationView.GetForCurrentView().VisibleBoundsChanged += MainPage_VisibleBoundsChanged;
 
+            saludo_inicial();
         }
 
 
@@ -66,48 +68,21 @@ namespace IPokemon
                 sView.IsPaneOpen = false;
             }
         }
-        
 
-       
-        private void opcionVolver(object sender, BackRequestedEventArgs e)
+        //Mensaje de voz al iniciar
+        private async void saludo_inicial()
         {
-            if (fmMain.BackStack.Any())
-            {
-                fmMain.GoBack();
-            }
+            MediaElement mediaElement = new MediaElement();
+            var synth = new Windows.Media.SpeechSynthesis.SpeechSynthesizer();
+            Windows.Media.SpeechSynthesis.SpeechSynthesisStream stream = await
+           synth.SynthesizeTextToStreamAsync("Estás en la aplicación de " +
+           "IPO Pokemon dos mil veintitrés. Bienvenido, disfruta!!! You are in the app of IPO Pokemon " +
+           "two thousand twenty three Welcome, enjoy!!");
+            mediaElement.SetSource(stream, stream.ContentType);
+            mediaElement.Play();
         }
 
-        private void BtnMenuPrincipal_Click(object sender, RoutedEventArgs e)
-        {
-            sView.IsPaneOpen = !sView.IsPaneOpen;
-        }
-
-        private void BtnInicio_Click_1(object sender, RoutedEventArgs e)
-        {
-            fmMain.Navigate(typeof(InicioIPOkemon));
-        }
-
-        private void BtnPokedex_Click_1(object sender, RoutedEventArgs e)
-        {
-            fmMain.Navigate(typeof(PokeDexPage));
-        }
-
-        private void BtnCombate_Click_1(object sender, RoutedEventArgs e)
-        {
-            fmMain.Navigate(typeof(CombatePage));
-        }
-
-        private void BtnCaptura_Click(object sender, RoutedEventArgs e)
-        {
-            fmMain.Navigate(typeof(CapturaPokemon));
-        }
-
-        private void BtnManual_Click(object sender, RoutedEventArgs e)
-        {
-            fmMain.Navigate(typeof(ManualDelJuego));
-        }
-
-        /*
+        //Para Windows:
         private void incializar()
         {
             TileContent content = new TileContent()
@@ -186,7 +161,47 @@ namespace IPokemon
             notification.ExpirationTime = DateTimeOffset.UtcNow.AddSeconds(30);
             var updater = TileUpdateManager.CreateTileUpdaterForApplication();
             updater.Update(notification);
-        }*/
+        }
 
+
+        private void opcionVolver(object sender, BackRequestedEventArgs e)
+        {
+            if (fmMain.BackStack.Any())
+            {
+                fmMain.GoBack();
+            }
+        }
+
+        private void BtnMenuPrincipal_Click(object sender, RoutedEventArgs e)
+        {
+            sView.IsPaneOpen = !sView.IsPaneOpen;
+        }
+
+        private void BtnInicio_Click_1(object sender, RoutedEventArgs e)
+        {
+            fmMain.Navigate(typeof(InicioIPOkemon));
+        }
+
+        private void BtnPokedex_Click_1(object sender, RoutedEventArgs e)
+        {
+            fmMain.Navigate(typeof(PokeDexPage));
+        }
+
+        private void BtnCombate_Click_1(object sender, RoutedEventArgs e)
+        {
+            fmMain.Navigate(typeof(CombatePage));
+        }
+
+        private void BtnCaptura_Click(object sender, RoutedEventArgs e)
+        {
+            fmMain.Navigate(typeof(CapturaPokemon));
+        }
+
+        private void BtnManual_Click(object sender, RoutedEventArgs e)
+        {
+            fmMain.Navigate(typeof(ManualDelJuego));
+        }
+
+        
     }
 }

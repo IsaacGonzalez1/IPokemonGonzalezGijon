@@ -60,17 +60,17 @@
         </Rectangle>
         <Image HorizontalAlignment="Left" Height="298" Margin="740,42,0,0" Grid.RowSpan="4" Grid.Row="3" VerticalAlignment="Top" Width="264" Source="/Assets/fondoInfoButterfree.png" Grid.ColumnSpan="2"/>
         <local:UCButterfree HorizontalAlignment="Center" Margin="0,12,0,0" VerticalAlignment="Top" Height="847" Width="914" Grid.RowSpan="9"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Grid.Row="1" TextWrapping="Wrap" Text="Altura:" VerticalAlignment="Top" Foreground="White" FontSize="28" Height="49" Width="122" FontFamily="Unispace" TextDecorations="Underline" Margin="0,10,0,0" FontStyle="Normal" Grid.RowSpan="2"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Grid.Row="2" TextWrapping="Wrap" Text="Peso:" VerticalAlignment="Top" Foreground="White" FontSize="28" Height="49" Width="220" FontFamily="Unispace" Margin="0,37,0,0" TextDecorations="Underline"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Grid.Row="3" TextWrapping="Wrap" Text="Sexo: " VerticalAlignment="Top" Foreground="White" FontSize="28" Height="53" Width="114" FontFamily="Unispace" Margin="0,31,0,0" TextDecorations="Underline"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Grid.Row="4" TextWrapping="Wrap" Text="Categoría:" VerticalAlignment="Top" Foreground="White" FontSize="28" Height="53" Width="187" FontFamily="Unispace" Margin="0,27,0,0" TextDecorations="Underline"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Grid.Row="5" TextWrapping="Wrap" Text="Habilidad:" VerticalAlignment="Top" Foreground="White" FontSize="28" Height="53" Width="190" FontFamily="Unispace" Margin="0,26,0,0" TextDecorations="Underline"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Grid.Row="6" TextWrapping="Wrap" Text="Debilidad:" VerticalAlignment="Top" Foreground="White" FontSize="28" Height="66" Width="481" FontFamily="Unispace" Margin="0,20,0,0" TextDecorations="Underline"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Grid.Row="7" TextWrapping="Wrap" Text="Evolución:" VerticalAlignment="Top" Foreground="White" FontSize="28" Height="53" Width="428" FontFamily="Unispace" Margin="0,26,0,0" TextDecorations="Underline" FontStyle="Normal"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="34,47,0,0" TextWrapping="Wrap" Text="Tipo:" VerticalAlignment="Top" FontSize="24" FontFamily="Unispace" Height="29" Width="73" FocusVisualPrimaryBrush="#FFF7EEEE" Foreground="#FFF3EAEA"/>
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Bicho" VerticalAlignment="Top" Height="46" Width="143" TextAlignment="Center" FontFamily="Unispace" FontSize="20" Margin="128,38,0,0" Background="#6645D432"/>
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="209,27,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Hembra" VerticalAlignment="Top" Background="#66ED0956" SelectionHighlightColor="#FF8513E3" FontSize="22" Width="197" TextAlignment="Center" Height="42" FontFamily="Unispace"/>
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="178,14,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Hielo" VerticalAlignment="Top" FocusVisualPrimaryBrush="#FF3BB7A3" SelectionHighlightColor="#FF00EDFF" FontSize="22" Width="102" TextAlignment="Center" FontFamily="Unispace" Height="43">
+        <TextBlock x:Name="alturaTextEsp" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="1" TextWrapping="Wrap" Text="Altura:" VerticalAlignment="Top" Foreground="White" FontSize="28" Height="49" Width="122" FontFamily="Unispace" TextDecorations="Underline" Margin="0,10,0,0" FontStyle="Normal" Grid.RowSpan="2"/>
+        <TextBlock x:Name="pesoTextEsp" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="2" TextWrapping="Wrap" Text="Peso:" VerticalAlignment="Top" Foreground="White" FontSize="28" Height="49" Width="220" FontFamily="Unispace" Margin="0,37,0,0" TextDecorations="Underline"/>
+        <TextBlock x:Name="sexoTextEsp" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="3" TextWrapping="Wrap" Text="Sexo: " VerticalAlignment="Top" Foreground="White" FontSize="28" Height="53" Width="114" FontFamily="Unispace" Margin="0,31,0,0" TextDecorations="Underline"/>
+        <TextBlock x:Name="catTextEsp" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="4" TextWrapping="Wrap" Text="Categoría:" VerticalAlignment="Top" Foreground="White" FontSize="28" Height="53" Width="187" FontFamily="Unispace" Margin="0,27,0,0" TextDecorations="Underline"/>
+        <TextBlock x:Name="habTextEsp" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="5" TextWrapping="Wrap" Text="Habilidad:" VerticalAlignment="Top" Foreground="White" FontSize="28" Height="53" Width="190" FontFamily="Unispace" Margin="0,26,0,0" TextDecorations="Underline"/>
+        <TextBlock x:Name="debilTextEsp" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="6" TextWrapping="Wrap" Text="Debilidad:" VerticalAlignment="Top" Foreground="White" FontSize="28" Height="66" Width="481" FontFamily="Unispace" Margin="0,20,0,0" TextDecorations="Underline"/>
+        <TextBlock x:Name="evlTextEsp" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="7" TextWrapping="Wrap" Text="Evolución:" VerticalAlignment="Top" Foreground="White" FontSize="28" Height="53" Width="428" FontFamily="Unispace" Margin="0,26,0,0" TextDecorations="Underline" FontStyle="Normal"/>
+        <TextBlock x:Name="tipoTextEsp" Grid.Column="1" HorizontalAlignment="Left" Margin="34,47,0,0" TextWrapping="Wrap" Text="Tipo:" VerticalAlignment="Top" FontSize="24" FontFamily="Unispace" Height="29" Width="73" FocusVisualPrimaryBrush="#FFF7EEEE" Foreground="#FFF3EAEA"/>
+        <TextBox x:Name="bichoCuadroEsp" Grid.Column="1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Bicho" VerticalAlignment="Top" Height="46" Width="143" TextAlignment="Center" FontFamily="Unispace" FontSize="20" Margin="128,38,0,0" Background="#6645D432"/>
+        <TextBox x:Name="hembraTextEsp" Grid.Column="1" HorizontalAlignment="Left" Margin="209,27,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Hembra" VerticalAlignment="Top" Background="#66ED0956" SelectionHighlightColor="#FF8513E3" FontSize="22" Width="197" TextAlignment="Center" Height="42" FontFamily="Unispace"/>
+        <TextBox x:Name="hieloEsp" Grid.Column="1" HorizontalAlignment="Left" Margin="178,14,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Hielo" VerticalAlignment="Top" FocusVisualPrimaryBrush="#FF3BB7A3" SelectionHighlightColor="#FF00EDFF" FontSize="22" Width="102" TextAlignment="Center" FontFamily="Unispace" Height="43">
             <TextBox.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF0A89FF"/>
@@ -78,7 +78,7 @@
                 </LinearGradientBrush>
             </TextBox.Background>
         </TextBox>
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="304,14,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Fuego" VerticalAlignment="Top" FontSize="22" TextAlignment="Center" FontFamily="Unispace" Height="43">
+        <TextBox x:Name="fuegoEsp" Grid.Column="1" HorizontalAlignment="Left" Margin="304,14,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Fuego" VerticalAlignment="Top" FontSize="22" TextAlignment="Center" FontFamily="Unispace" Height="43">
             <TextBox.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF9E6511"/>
@@ -87,7 +87,7 @@
                 </LinearGradientBrush>
             </TextBox.Background>
         </TextBox>
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="427,14,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Roca" VerticalAlignment="Top" TextAlignment="Center" FontSize="22" RenderTransformOrigin="0.465,0.511" Width="102" FontFamily="Unispace" Height="43">
+        <TextBox x:Name="rocaEsp" Grid.Column="1" HorizontalAlignment="Left" Margin="427,14,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Roca" VerticalAlignment="Top" TextAlignment="Center" FontSize="22" RenderTransformOrigin="0.465,0.511" Width="102" FontFamily="Unispace" Height="43">
             <TextBox.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFB19037"/>
@@ -95,7 +95,7 @@
                 </LinearGradientBrush>
             </TextBox.Background>
         </TextBox>
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="208,8,0,0" Grid.Row="1" TextWrapping="Wrap" Text="1,1 m" VerticalAlignment="Top" FontSize="22" TextAlignment="Center" FontFamily="Unispace" Width="197">
+        <TextBox x:Name="alturaEsp" Grid.Column="1" HorizontalAlignment="Left" Margin="208,8,0,0" Grid.Row="1" TextWrapping="Wrap" Text="1,1 m" VerticalAlignment="Top" FontSize="22" TextAlignment="Center" FontFamily="Unispace" Width="197">
             <TextBox.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFDA6E00"/>
@@ -106,8 +106,8 @@
             </TextBox.Background>
         </TextBox>
 
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Volador" VerticalAlignment="Top" Height="46" Width="136" TextAlignment="Center" FontFamily="Unispace" FontSize="20" Margin="324,39,0,0" Background="#663A8DD5"/>
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="207,37,0,0" Grid.Row="2" TextWrapping="Wrap" Text="32,0 kg" VerticalAlignment="Top" FontSize="22" TextAlignment="Center" FontFamily="Unispace" Width="197">
+        <TextBox x:Name="voladorEsp" Grid.Column="1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Volador" VerticalAlignment="Top" Height="46" Width="136" TextAlignment="Center" FontFamily="Unispace" FontSize="20" Margin="324,39,0,0" Background="#663A8DD5"/>
+        <TextBox x:Name="kilosEsp" Grid.Column="1" HorizontalAlignment="Left" Margin="207,37,0,0" Grid.Row="2" TextWrapping="Wrap" Text="32,0 kg" VerticalAlignment="Top" FontSize="22" TextAlignment="Center" FontFamily="Unispace" Width="197">
             <TextBox.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFDA6E00"/>
@@ -117,7 +117,7 @@
                 </LinearGradientBrush>
             </TextBox.Background>
         </TextBox>
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="209,15,0,0" Grid.Row="4" TextWrapping="Wrap" Text="Mariposa" VerticalAlignment="Top" FontSize="22" TextAlignment="Center" FontFamily="Unispace" Width="197">
+        <TextBox x:Name="mariposaEsp" Grid.Column="1" HorizontalAlignment="Left" Margin="209,15,0,0" Grid.Row="4" TextWrapping="Wrap" Text="Mariposa" VerticalAlignment="Top" FontSize="22" TextAlignment="Center" FontFamily="Unispace" Width="197">
             <TextBox.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFDA6E00"/>
@@ -127,7 +127,7 @@
                 </LinearGradientBrush>
             </TextBox.Background>
         </TextBox>
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="209,18,0,0" Grid.Row="5" TextWrapping="Wrap" Text="Ojo Compuesto" VerticalAlignment="Top" FontSize="22" TextAlignment="Center" FontFamily="Unispace" Width="197">
+        <TextBox x:Name="ojocompEsp" Grid.Column="1" HorizontalAlignment="Left" Margin="209,18,0,0" Grid.Row="5" TextWrapping="Wrap" Text="Ojo Compuesto" VerticalAlignment="Top" FontSize="22" TextAlignment="Center" FontFamily="Unispace" Width="197">
             <TextBox.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFDA6E00"/>
@@ -152,12 +152,109 @@
             </Image.RenderTransform>
         </Image>
 
-        <Button x:Name="BtnVolverPokedex" Content="Volver a la Pokedex" Margin="29,0,0,0" Grid.Row="9" FontSize="29" FontFamily="Unispace" Click="BtnVolverPokedex_Click" >
+        <Button x:Name="BtnVolverPokedexEsp" Content="Volver a la Pokedex" Margin="29,0,0,0" Grid.Row="9" FontSize="29" FontFamily="Unispace" Click="BtnVolverPokedex_Click" >
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF29A761"/>
                     <GradientStop Color="#FF806BFF" Offset="1"/>
                 </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="BtnVolverPokedexIng" Content="Back to the Pokedex" Margin="29,0,0,0" Grid.Row="9" FontSize="29" FontFamily="Unispace" Click="BtnVolverPokedexIng_Click" Visibility="Collapsed" >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF29A761"/>
+                    <GradientStop Color="#FF806BFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Image x:Name="imgChincheta1" HorizontalAlignment="Left" Height="100" Margin="362,14,0,0" Grid.Row="9" VerticalAlignment="Top" Width="100" PointerPressed="pinButterfree" Source="/Assets/chincheta.png"/>
+
+        <TextBlock x:Name="alturaTextIng" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="1" TextWrapping="Wrap" Text="Height:" VerticalAlignment="Top" Foreground="White" FontSize="28" Height="49" Width="122" FontFamily="Unispace" TextDecorations="Underline" Margin="0,10,0,0" FontStyle="Normal" Grid.RowSpan="2" Visibility="Collapsed"/>
+        <TextBlock x:Name="pesoTextIng" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="2" TextWrapping="Wrap" Text="Weight:" VerticalAlignment="Top" Foreground="White" FontSize="28" Height="49" Width="220" FontFamily="Unispace" Margin="0,37,0,0" TextDecorations="Underline" Visibility="Collapsed"/>
+        <TextBlock x:Name="sexoTextIng" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="3" TextWrapping="Wrap" Text="Sex:" VerticalAlignment="Top" Foreground="White" FontSize="28" Height="53" Width="114" FontFamily="Unispace" Margin="0,31,0,0" TextDecorations="Underline" Visibility="Collapsed"/>
+        <TextBlock x:Name="catTextIng" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="4" TextWrapping="Wrap" Text="Category:" VerticalAlignment="Top" Foreground="White" FontSize="28" Height="53" Width="187" FontFamily="Unispace" Margin="0,27,0,0" TextDecorations="Underline" Visibility="Collapsed"/>
+        <TextBlock x:Name="habTextIng" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="5" TextWrapping="Wrap" Text="Ability:" VerticalAlignment="Top" Foreground="White" FontSize="28" Height="53" Width="190" FontFamily="Unispace" Margin="0,26,0,0" TextDecorations="Underline" Visibility="Collapsed"/>
+        <TextBlock x:Name="debilTextIng" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="6" TextWrapping="Wrap" Text="Weakness:" VerticalAlignment="Top" Foreground="White" FontSize="28" Height="66" Width="481" FontFamily="Unispace" Margin="0,20,0,0" TextDecorations="Underline" Visibility="Collapsed"/>
+        <TextBlock x:Name="evlTextIng" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="7" TextWrapping="Wrap" Text="Evolution:" VerticalAlignment="Top" Foreground="White" FontSize="28" Height="53" Width="428" FontFamily="Unispace" Margin="0,26,0,0" TextDecorations="Underline" FontStyle="Normal" Visibility="Collapsed"/>
+        <TextBlock x:Name="tipoTextIng" Grid.Column="1" HorizontalAlignment="Left" Margin="34,47,0,0" TextWrapping="Wrap" Text="Type:" VerticalAlignment="Top" FontSize="24" FontFamily="Unispace" Height="29" Width="73" FocusVisualPrimaryBrush="#FFF7EEEE" Foreground="#FFF3EAEA" Visibility="Collapsed"/>
+        <TextBox x:Name="bichoCuadroIng" Grid.Column="1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Bug" VerticalAlignment="Top" Height="46" Width="143" TextAlignment="Center" FontFamily="Unispace" FontSize="20" Margin="128,38,0,0" Background="#6645D432" Visibility="Collapsed"/>
+        <TextBox x:Name="hembraTextIng" Grid.Column="1" HorizontalAlignment="Left" Margin="209,27,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Female" VerticalAlignment="Top" Background="#66ED0956" SelectionHighlightColor="#FF8513E3" FontSize="22" Width="197" TextAlignment="Center" Height="42" FontFamily="Unispace" Visibility="Collapsed"/>
+        <TextBox x:Name="hieloIng" Grid.Column="1" HorizontalAlignment="Left" Margin="178,14,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Ice" VerticalAlignment="Top" FocusVisualPrimaryBrush="#FF3BB7A3" SelectionHighlightColor="#FF00EDFF" FontSize="22" Width="102" TextAlignment="Center" FontFamily="Unispace" Height="43" Visibility="Collapsed">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0A89FF"/>
+                    <GradientStop Color="#FF41C6FF" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="fuegoIng" Grid.Column="1" HorizontalAlignment="Left" Margin="304,14,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Fire" VerticalAlignment="Top" FontSize="22" TextAlignment="Center" FontFamily="Unispace" Height="43" Visibility="Collapsed">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF9E6511"/>
+                    <GradientStop Color="#FFD03A10" Offset="0.973"/>
+                    <GradientStop Color="#FFEEC313" Offset="0.015"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="rocaIng" Grid.Column="1" HorizontalAlignment="Left" Margin="427,14,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Rock" VerticalAlignment="Top" TextAlignment="Center" FontSize="22" RenderTransformOrigin="0.465,0.511" Width="102" FontFamily="Unispace" Height="43" Visibility="Collapsed">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFB19037"/>
+                    <GradientStop Color="#FF584208" Offset="0.985"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="alturaIng" Grid.Column="1" HorizontalAlignment="Left" Margin="208,8,0,0" Grid.Row="1" TextWrapping="Wrap" Text="43.31 inches" VerticalAlignment="Top" FontSize="22" TextAlignment="Center" FontFamily="Unispace" Width="197" Visibility="Collapsed">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFDA6E00"/>
+                    <GradientStop Color="#FF2942A7" Offset="1"/>
+                    <GradientStop Color="#FF2697B1" Offset="0.228"/>
+                    <GradientStop Color="#FF0FCA96" Offset="0"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+
+        <TextBox x:Name="voladorIng" Grid.Column="1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Flying" VerticalAlignment="Top" Height="46" Width="136" TextAlignment="Center" FontFamily="Unispace" FontSize="20" Margin="324,39,0,0" Background="#663A8DD5" Visibility="Collapsed"/>
+        <TextBox x:Name="kilosIng" Grid.Column="1" HorizontalAlignment="Left" Margin="207,37,0,0" Grid.Row="2" TextWrapping="Wrap" Text="32,0 kg" VerticalAlignment="Top" FontSize="22" TextAlignment="Center" FontFamily="Unispace" Width="197" Visibility="Collapsed">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFDA6E00"/>
+                    <GradientStop Color="#FF2942A7" Offset="1"/>
+                    <GradientStop Color="#FF2697B1" Offset="0.228"/>
+                    <GradientStop Color="#FF0FCA96" Offset="0"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="mariposaIng" Grid.Column="1" HorizontalAlignment="Left" Margin="209,15,0,0" Grid.Row="4" TextWrapping="Wrap" Text="Butterfly" VerticalAlignment="Top" FontSize="22" TextAlignment="Center" FontFamily="Unispace" Width="197" Visibility="Collapsed">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFDA6E00"/>
+                    <GradientStop Color="#FF2942A7" Offset="1"/>
+                    <GradientStop Color="#FF2697B1" Offset="0.228"/>
+                    <GradientStop Color="#FF0FCA96" Offset="0"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="ojocompIng" Grid.Column="1" HorizontalAlignment="Left" Margin="209,18,0,0" Grid.Row="5" TextWrapping="Wrap" Text="Compound eye" VerticalAlignment="Top" FontSize="22" TextAlignment="Center" FontFamily="Unispace" Width="197" Visibility="Collapsed">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFDA6E00"/>
+                    <GradientStop Color="#FF2942A7" Offset="1"/>
+                    <GradientStop Color="#FF2697B1" Offset="0.228"/>
+                    <GradientStop Color="#FF0FCA96" Offset="0"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <Button x:Name="btnEspañol" Content="" Margin="516,24,0,0" Grid.Row="9" VerticalAlignment="Top" Height="81" Width="91" Click="idiomaEspClick">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/icons8-españa-96.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnIngles" Content="" Margin="640,0,0,0" Grid.Row="9" Height="81" Width="91" Click="idiomaIngClick">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/icons8-gran-bretaña-96.png"/>
             </Button.Background>
         </Button>
 
